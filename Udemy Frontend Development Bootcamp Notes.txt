@@ -1,0 +1,2121 @@
+9 Pathfinder
+	I think we should start as 3. Quite Experienced. I know enough HTML and CSS to not need the basics again
+	Recommended to skip the intro to programming modules
+	Try out the modules with challenge in the name to assure you are ready.
+	
+	Idk that skips me to Section 18: Advanced Javascript And DOM Manipulation
+	Lets continue from 13 and see from there.
+
+=======================		Section 2 Intro to HTML	=======================
+
+12 Downloading Course Resources
+	
+	Most of the time resources will be in a .zip format
+	After extracting, drag over to VSCode
+	
+13 HTML Heading Element
+	Just going over <h1> tag </h1>
+	<> are tags. Whole thing is the element
+	Acts as the sort of "Chapters in a book"
+	Only goes from H1 to H6
+	
+	From here, we're completing the html tag exercise. 
+	Not too bad, just adding <h<1-3>> tags around some text
+	
+	Oh hold up, there was a preview plugin installed, very nice.
+		Just right click html > preview
+	
+	Ctrl+S should have prettified our code, didn't work.
+		Figured it out, VSCode has an option to auto format on save disabled
+	
+	Usually don't want more than one H1. Also don't usually skip H's. Just a best practice.
+	
+14 Paragraph Element
+	<p> Tag. Simplest plain text tag. <p> also skips to the next line, apparently helps with the blind as well
+	This is also where we learn about Lorem Ipsum. It's just a placeholder text that simulates natural sentences and such
+	
+	lorem### is a command in VSCode to automatically create lorem ipsum text, ### being the number of words you want
+	
+15 Void Elements/Self Closing Tags
+	Elements that end in the same line
+	<hr /> Called a horizontal rule. Adds a line where a <hr /> tag is found
+	<br /> Same thing as above, but without the line
+	
+	Recommended to make new <p> tags instead of <br > When breaking apart blocks of text, unless necessary
+	
+16 Project Movie Ranking
+	Simple project tying together H tags, void elements, and p tags
+	
+17 How to Ace This Course
+	Just includes a print out of 6 reasons why you want to complete this course
+		1 Why?
+			Because I'm tired of sitting on my ass at this company and want to be a better frontend dev
+		2 What will I achieve
+			Newfound and reawakened skills that I have been lacking or allowed to have stagnated
+		3 How will my life change
+			More confident to work on my own projects along with what I will do professionally
+		4 Will this impact friends and family
+			I will be able to help friends with websites and such. Karla will have higher QoL when she arrives
+		5 What will I feel if I do NOT accomplish this
+			Shitty and unmotivated to start again
+		6 What will my life look like if I did accomplish this
+			I'll be able to use more of my potential towards work I am more passionate about. Be able to create
+
+	
+
+=======================		Section 3 Intermediate HTML		=======================
+
+18 The List Element
+	As name suggests, creates lists
+	<ul > Unordered lists. First tag we're seeing that requires <li> list items
+	<ul>
+		<li></li>	List order does NOT matter
+	</ul>
+	<ol> Ordered lists. Does the same but will order them 1,2,3... etc onwards. Still need <li>'s
+	
+19 3.1 Nesting and Indentation
+	A personal preference to how to write out HTML, either like this:
+	<li> Text </li>
+	Or this:
+	<li>
+		Text. Personally I prefer this way, indentation helps a ton with determining what is going on.
+	</li>
+	Oh turns out we can imbed sub lists in lists, by putting a <ul> in an <li>
+	Fuck this coding exercise was ugly. But I got it done 
+	Mostly seems to be showing the importance of a good tool like VSCode with helping determine what your code is doing
+	
+20 3.2 Anchor Elements
+	<a> This allows to create links
+	This is our first attribute, href, tells content where the hyperlink should go to. Without it, there will be no link
+	<tag attribute=value> Content </tag>
+	
+	There are Global attributes as well, for example is draggable=true
+	
+		============================== Completed Lessons for 11/6
+		Some quick ending notes. 
+			It's important to review the Whys and Whats of a goal. Inspiration will fail eventually, it's nice to have that reminder
+			<ul><li><ul><li></ul></li></ul> Will get ugly quickly, but is the best way to get sublists
+			While attributes have a cute and fuzzy appearance at first, they will grow and get giga ugly in the following lessons
+			
+			
+21 3.3 Image Elements
+	<img src="url" /> Notice its a void element. Just the img and some attributes
+	src could be a local file, or somewhere on the internet
+		picsum.photos/### Its legit just "Lorem Ipsum" for placeholder photos, ### is the square size of an image
+	alt="Text". A text describing a what happens in case user is blind, or image did not load
+	
+22 3.4 Project Birthday Invite
+	Basically just make a simple 90's birthday invite using elements we've learned so far
+	It came out cute lol
+	
+23 3.5 Tip from Angela - Habit Building with the Calandar Trick
+	She is describing the calandar trick, about adding a big X on a calandar every day, to start, then continue a streak
+	Currently on day 4, best if I start doing this.
+		Went ahead and posted a sticky at the base of my PC, straight at my eyeline
+		Once I learn Flexbox, I'll create a website to track the same
+		
+24 3.6 Access to the Monthly App Brewery Newsletter
+	A handcrafted email letter Dr. Angela sends out every month. Come back to this to see if it is something you are interested in
+		If you do come back to it before leaving to Galapagos, then you want it
+		If you don't, there's your answer
+		
+
+=======================		Section 4 Multi Page Websites		=======================
+
+25 4.1 Computer File Paths
+	Absolute and Relative Paths. Unique locations on your computer.
+	Can do so graphically with a UI, or through text like in a cmd line
+	Files - End points that have content
+	Folder - Continuing path that contains Files and Folders
+	Absolute File Path - The full path from the beginning of root in the hard drive
+		Much more when describing something in a computer. No matter where you are you will know exactly where to look
+	Relative File Path - The path describing where a file or folder "relative" to your current location. 
+		More useful in apps, since journey is shorter
+	Special commands
+		../ - Go up a level relative to your current location
+		./ - Within current directory, look for a file/folder. 
+	Project was just a simple exercise to look within a messy folder directory to get a grasp on relative file paths using <img> tags
+	
+			============================== Completed Lessons for 11/6
+			Some quick ending notes.
+			<img /> tags are self closing, and picsum.photos is a handy way to get a random image. 
+				alt="Text" is more for blind readers than to inform users server is down and to use their imagination
+			Basic projects are fine for now, but during the harder lessons it will be worth your time to sink your teeth into the assignment
+			You have a calander now staring you in the face, keep the habit going and you will become giga wise 
+			I thank the lord I have an intuitive sense of how file paths work, because I forgot how confusing the topic was as a beginner
+			
+26 4.2 What are Web Pages
+	We're starting to learn about multi-page websites
+	We can use anchor tags to link to our various website pages 
+		<a href="./about.html">About Page</a> 	as an example
+	Interesting... a QR quiz. It takes us to a page showing a gif showing if we got it right or wrong
+	
+27 4.2 HTML Boilerplate
+	A basic HTML file that has most of all things that you would need in a typical HTML document
+	<!DOCTYPE html> Tells browser this is in HTML5
+	<html lang="en"> </html> Opening and closing tags. First AND Last tags of the document
+	<head> Tag, usually contains all the metadata of document. Such as 
+		<meta charset="UTF-8"> which characters can render
+		<title> The text that shows in the browser tab title
+	<body> The majority of the content of the website itself will go here, between this and closing </body> tag
+		Everything up to this point will be here.
+	You're going to start seeing a lot more html indentation from now on.
+	
+	Bruh, VSCode has a shortcut for creating boilerplate
+		!
+		Note this one will automatically set the a definition to still use IE. Went down a rabbit hole to figure out how to disable this
+		Learned that most of these HTML shortcuts come from a VSCode built in called Emmet Abbriviations
+		Scratch that, looking closely Emmet removed the IE, still feel the need to make my own after all this time spent tho
+			I created one! shortcut createLink: <a href="">TextHere</a>. Simple but saves some typing hopefully!
+			Can be found in html.json under File>Preferences>Configure Snippets>Select Language HTML> html.json
+			
+	<meta name="viewport" content=""> Helps describe how to display website when it first opens
+	
+28 4.3 Project Project Portfolio
+	This lesson was to combine all the elements learned up to this point. Including starting from a boilerplate HTML document
+	I linked the previous movie ranking projects and the birthday party too. I even got to use the createLink lol
+	Would be good to keep updating this as we learn more HTML and CSS, to spruce up what I already have currently set up
+	
+29 4.4 Free hosting your website on github
+	Web Hosting: Allowing anyone to visit your publicly available website. 
+	First must put our files on a web server, so anyone can access it when requested
+	So far only have our files locally. We have so far only been doing local development
+	
+	Hosting with GitHub
+		Plus Arrow > New Repository 
+		Call it Personal Website. Set it as Public, add a README file
+		Upload HTML Portfolio project. Just the content, not the home directory for it
+		After commiting, go to Settings > GitHub pages. Then site is fully loaded, and anyone can come visit it. That's sick actually
+		
+30 4.5 Introduction to Capstone Projects
+	Having an online portfolio showcasing your work is important... JULIO
+	This will be a good place to start showcasing work you have done previously
+	GitHub is a huge snitch on how much someone has been working.
+	In the next few lessons, there will be lessons on the Upcoming Capstones. 
+		It is ideal to make these unique and completely your own. You don't want work that looks like everyone else's who takes this
+		It's important to struggle and learn on your own. VSCode side quests have been good for you
+	
+31 4.6 Capstone Project - Online Resume
+			============================== Completed Lessons for 11/8
+			Things are beginning to ramp up now. It's great you learned the basics of HTML before, but reapplying them 
+				has really begun to resolidify that understanding, and especially learn new skills
+			Being curious and learning about misc. topics will slow down your course progress, BUT it is important to learn about 
+				outside topics to develop that desire to learn and get better. 
+			Tomorrow will involve getting access back from your j-lopez github, and beginning to track progress on it 
+			Tomorrow will also have you get started on creating the capstone project presented in this module. An HTML only resume.
+			
+			============================== Completed Lessons for 11/9
+			I fully followed through on the plan from yesterday. I was unable to collect my old j-lopez GitHub, but I did 
+				send out a request through their help page and eagerly await their response.
+			I also completed the HTML only capstone and it didn't turn out too bad despite ONLY using html. 
+				Angela was right in saying that proper structure goes a long way in making a website look nice
+			
+			
+=======================		Section 5 Introduction to CSS		=======================
+
+32 5.0 Why do we need CSS
+	Cascading Style Sheets. Sytles 'cascade' down like a waterfall, general -> specific
+	Sytle Sheet is similar to a language, allows us to specify how to style an HTML sheet. CSS is most commonly used
+	W3C came out with HTML3, which started to allow web developers to start styling there sheet
+		Now deprecated. HTML is now used almost entirely for content, CSS would contain all the styling
+	
+33 5.1 How to Add CSS
+	Three ways to add CSS to a website
+		1. Inline - Goes inside the HTML tag itself. Goes in the opening tag, using style="property:value,..."
+			Good when you need to add style to a single or few tags. Try to avoid unless its just for a few tags
+		2. Internal - You can add a <style> tag withing the <head> tag. Each value looks like 
+			selector { property : value } - selectors are the tag you want to apply the style to. 
+		3. External - Styling lives within an outside document, extension .css. Usually the Go-To method for CSS	
+			In <head> tag, create a <link rel="stylesheet" href="./styles.css"/> Self closing tag. rel is What link is, href is where
+	
+	5.2 Was a quiz
+
+34 5.3 CSS Selectors
+	We have seen CSS code is often of the type `property:value`. CSS selectors are what html will be selected
+		Full thing looks like selector { property : value }
+	Different types of selectors
+		Element Selectors - An HTML tag by itself. CSS using this will affect ALL tags with this value. 
+		Class Selector - Start a selector with a .<classname>, <classname> being an attribute added to HTML tag, class="<classname>"
+			Note, you can add the same classname to various tags, Class Selector will affect ALL elements with that classname
+		ID Selector - #<classname>, similar to Class selector, added as an attribute in HTML element id="<classname>"
+				Difference: Classes can be added to multiple elements, IDs should only be added to single elements
+		Attribute Selector - <element>[<attribute>] { css code }. Select all elements with a certain attribute.
+			Can even select attributes set to certain values. p[draggable="false"], or <element>[<attribute>="<value>"] { CSS }
+		Universal Selector - Select All. Easy enough lol
+	CSS Specificity will be gone over in Section 7 Advanced CSS
+	
+35 5.4 Project Color Vocab Project
+	Created a style.css file to adjust various classes, elements, and id's to have specific CSS properties
+	Most of the work was in the #id's, since there were many. .class affected multiple, as did img { prop1 prop2 }
+	
+36 5.5 Dealing with distractions
+	A bit of a side track from the web development.
+	Being received tricks and tips to remove distractions and stay focused
+		Turn off the damn phone lol
+		Do coding when no one is there to distract
+		In essence, find your distrations, and deal with them
+	
+37 5.6 Joining the Student Community Discord
+	There is a link to join a student discord. If you see value in this, come back to this section to join.
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/10
+			Still haven't heard back from GitHub, if I don't write anything for a future date about this you can assume the same
+				Did eventually hear back, although they were not able to help, had to make a new GitHub in the end.
+			Worked through the entirety of the CSS Intro Module. CSS is a huge motivation killer for a lot of Web Developers, no
+				having to juggle TWO entire documents to make ONE html page look nicer. 
+				I noticed that there was a web design module coming up, high-key excited for it so I can make better design
+					decisions in the future
+			Great CSS refresher in one hour and some change, even learned a new selector type. 
+			
+		
+=======================		Section 6 CSS Properties		=======================
+
+38 6.0	CSS Colors
+	Colors are a property found in various places, such as background-color or color (text color)
+	Named Colors are found on https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+		You can use these colors by name when you don't want to use hex
+	For finding a color palette, you can use https://colorhunt.co
+		You will likely need to use the hex values of the color palettes here
+		
+39 6.1 Font Properties	
+	Fonts can be changed, whether it be to make it smaller/bigger, bolder, change the font family, italics, etc
+	Font-size: 
+		1px is about 1/96th of an inch. 1pt (point) 1/72th of an inch, slightly bigger than an pixel. 
+			Microsoft word's text size uses points, to give you a rough estimate of size
+		Could also use 1em, means 100% width of the parent. This is all relative to the parent
+		1rem, means 100% of the root parent, so usually the html tag
+			Angela Yu recommends working with rem for the most part
+	Font Weight
+		Normal/bold, lighter/bolder relative to parent, or a straight number 
+	Font Family
+		Can tell which font to set the site. Best to have your <desired font>,<backup font> In case someone's computer doesn't have the first
+		If your font has a space in it's name, enclose it in ""
+		https://fonts.google.com Is a good resource to find new fonts.
+			Copy the embed code within the <head> section of the code, just after the <style>. Will bring it in during execution
+	Text Alignment
+		text-align: <value>, could be left,  right, center, justify
+		
+40 6.2 Inspecting CSS
+	Particularly with the Chrome dev tools. Ctrl + Shift + I will open up the Dev Tools usually
+	With dev tools open, click the Style Tab. Selecting an element will show the CSS properties.
+		You can change the CSS values straight in the browser, using a the + button found here. 
+		Note this will change on a refresh, but could be nice to mess around with during development
+	Computed Tab - Shows the ACTUAL computed properties currently being displayted
+	CSS Overview - Found in the vertical ... of the chrome dev tools. 
+		Capture overview. Is super useful when you want to see a website's colors and used fonts family and colors
+	Instead of a code to write, we're led to a quiz on https://appbrewery.github.io/css-inspection/ to test our CSS inspection skills
+		For fun I found the HTML page for the code and copied the answers lol
+		
+41 6.3 CSS Box Model
+	*shivers* Shit is getting real now.
+	Margin, Padding, Border, Height, and Width
+	Each element is a box, with all the properties above.
+	Height - Can increase veritical size, which will push boxes down. Can use pixels, rem, or even percentage
+	Width - Same as the above, just to the right.
+	Border - Each box has a border, invisivle by default
+		Can take three values <selector> { border : <thiccness> <style> <color>; }
+		Note - Height and Width DO NOT change, border goes outwards, not in
+		After border is defined, can be changed further. ex. border-top: <property>
+		Even further: border-width: <top> <right> <bottom> <left> OR border-width: <top&bottom> <left&right>
+	Padding
+		Pushes border OUT by the specified value from the content
+		Height and width of content also do NOT change, but overall box does. Very confusing stuff
+	Margin
+		The area OUTSIDE the border, seperates blocks from one another. 2 boxes with 10px margin will have 20px between each other
+		That's what the fancy colorful target value in the CSS inspection defines just that
+	Padding and Margin both use the same syntax for width and size as used with border-width with 4 parameters, and 2 parameters ex
+		padding-width: 10px 14px 5px 10px
+		margin-width: 10px 5px
+	So far we've used the term 'boxes', but you know them by another name	
+		<div> tag - Invisible boxes that we can fit other content inside of
+	Pesticide Chrome Extension
+		Used to get rid of bugs in CSS. Will show div boxes without having to set Ol' Reliable border: 1px solid red
+		After enabling, will show you div boxes along with any other content inside them. 
+		Holding ctrl will show you which node you're hovering over
+
+42 6.4 Motivational Poster Project
+	God fucking dammit, I just wanna play RuneScape, but if I leave this project for tomorrow,
+	I'll feel all weird starting at the ending, might as well send it. What's ONE more CSS file
+	
+	You have to make a motivational meme. I already have one in mind. Giga Chad "Yes I'm a developer, how can you tell"
+		Black background white text centered on the page.
+		Oh yeah, it came out sick lmao
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/11
+			CSS is a another monster to learn entirely. Web Dev is just that trifecta of HTML - CSS - Javascript
+			CSS ramps up quickly. Faster than HTML, but I feel bad for those that face this demon and then have to face JS
+			Balancing fonts, colors, weights, boxes etc is tiresome, helps to have that palette picker to at least help with color
+			At least knowing about all the various affects and additions you can add helps in keeping them aligned
+			
+			
+=======================		Section 7 Intermediate CSS		=======================
+
+43. 7.0 The Cascade - Specificity and Inheritance
+	Holy guacamole CSS gets THREE sections
+	The "Cascading" part of CSS only makes sense when we talk about conflicting rules
+		Kind of like a waterfall of multiple levels, "upper" styles get applied first, "lower" get applied later, but override upper
+	For example...
+		Imagine 3 <li> elements with an external file coloring them all green. Then if we add an inline style to make only one red, that one will appear red "at the last minute" to the system
+	4 Broad categories when viewing importance of a CSS Rule
+		1 Position - "Lower" positions in a file (larger line number) override upper. 
+			This applies to rules in the same curly brace of the same selector
+			Also applies for second selector if it is updated later
+		2 Specificity - How specific an selector is in selecting an element
+			Element Selector < Class Selector < Attribute Selector < ID Selector
+			<-- Lowest Priority 			Highest Priority -->
+		3 Type - Internal, External, Inline
+			External < Internal < Inline
+			<-- Low 		High --> 
+		4 Importance
+			Adding a keyword <element> { <attribute> : <value> !important; } Will overall ALL rules
+			
+		NOTE: 1 2 3 4 are by themselves listed in order of Lowest to Highest Important
+		
+44. 7.1 Combining CSS Selectors
+	We can specify multiple css selectors to narrow down which element we want to act on
+	
+	Group Rule
+		<Selector 1>, <Selector 2>, ...etc { <prop> : <val> } Selects ALL elements listed
+	Child Rule
+		<Selector 1> > <Selector 2> > ...etc { <prop> : <val> } Selector1 is parent of Selector 2
+			These are direct children, could also go multiple using more and more > 
+	Descendant Rule
+		<Selector 1> <Selector 2> { <prop> : <val> } Note, Selector 2 must be an ancestor of the Selector 1 
+			Subtle difference, child rule is DIRECT parent child relationship
+	Chaining
+		<Selector 1><Selector 2> { <prop> : <val> } Note the no-spaces. Wow I don't like that
+			Applies rule where all selectors are matching
+			Element Selector will always go first. Okay that makes sense and clears up the parameter naming issue
+	Combining Combiners
+		Proof that God has abandoned Front End development.
+		You can combine the above rules with each other
+		
+45 7.2 CSS Positioning
+	Four main positioning styles for an element. Sorry Sticky you didn't make the cut here
+	Static 
+		HTML default. Elements flow as they are in the HTML document
+		Goes below whatever was the previous element
+	Relative
+		An item is positioned relative to where it should be (Static position)
+		Various other properties get introduced. Left and top, moves a value amount from it's static position
+	Absolute
+		Position relative to the nearest positioned ancestor. If none, selects Top-Left corner of website
+			Static does NOT count. Neither named nor implied
+	Fixed
+		Position relative to top-left corner of browser. I guess sticky came back anyways
+		
+	Fuck, position is ANOTHER layer of the box model, make it stop
+	
+	Z-Index
+		Which elements go on top of each other in a webpage, you can think of it as vertical (Not left/right top/bottom)
+		Higher z-index goes on top. All elements default to z-index of 0. 
+		Setting Absolute position, it takes the element to another layer. I guess you can call it a "Higher z-index of 0" 
+		
+46 7.3 [Project] CSS Flag
+	Bro who gives a shit about a flag check this out	https://diana-adrianne.com/purecss-lace/
+		This is self portrait made ENTIRELY in CSS, what the fuck
+		Actually super impressive, it's insane how much you can do with CSS. The skill ceiling was just giga raised for me
+	Going back to the flag, we're going to make a flag of Laos
+		Do not touch the HTML. Just use what is currently there to create a simple flag
+	Important structure to realize
+		Having a parent with position Relative (like a div), and a child position Absolute (another div) will make moving divs
+		so much easier than having to workaround other tags, like the p that gave you so much trouble
+	You can select an element in chrome, then right-click > copy selector to get the full path from body to the element
+	
+47 Tip from Angela - Nothing Easy is worth doing
+	Checkpoint for completing another module. Angela's pep talk about how no one is really *born* with an innate skill
+		Sure talent is a thing, but not putting in the hours to what you want to learn, you'll never complete what you want
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/12
+			It's currently 12:15, and I got that post CSS depression. I'm exaggerating just a bit, the lesson wasn't awful
+			This is now the third day in a row practicing CSS, and it'll only continue tomorrow. There's a reason why CSS is such
+				a hard concept to grasp, there is SO much to nail down and understand. On top of it being so finicky, it feels like
+				there are 1000 different things that could explain why a piece of code isn't working. 
+			Getting an understanding about the box model, and an explanation on the various position modes was really nice.
+			Having a reference for CSS Specificity is also really handy now. If Z-Index ever comes up, we know about it now too
+
+Section 8 Advanced CSS
+
+48 8.0 CSS Display
+	We're going to talk about CSS Display properties today
+	Block
+		Most tags in HTML will have this property
+		Will take up the entire full width
+	Inline
+		Span tag can fit between another tag. By default holds the Inline Property
+		Will only take up their necessary width. Would go to the next line if it runs to the end
+		You CANNOT set the size here, since it defaults to the contents size
+	Inline-Block
+		Does allow us to set height and width bc of blocks
+		Also allows multiple horizontal tags bc of inline
+	None
+		Makes an element disappear entirely.
+
+49 8.1 CSS Float
+	Wrap text around a particular element. Like in a word document with a picture
+	<element> { float : <left/right> } Most of the time, will be left bc of how websites are usually structured
+		Will take the element out of the usual HTML flow, will float around text. 
+		Be careful, bc what if you want a footer? You wouldn't want to apply a float to that.
+			Target the element that you don't want floating around an element, <element> { clear : <left/right/both> }
+	Note, while Float is good to know, it can give other design issues, there are better tools to solve this
+			For the most part, try to use float only when working with text around images
+	
+50 8.2 Creating responsive Websites
+	We want to create our websites responsive to all types of screens, especially in our mobile-driven world
+	Four main ways to accomplish this
+	Media Queries
+		@media (<property>:<value>)
+			Applies a CSS when certain criteria are met. Example @media(max-width:600px) {}
+	CSS Grid - Much further discussed in Section 10
+		Grid container:
+		display: grid. Defines how columns and rows can be laid out, and we fit content within it. 
+		grid-template-columns: <distance1> <distance2>; Describes how many columns using <distanceX>fr.
+		grid-template-rows: <height1> <height2> ... ; Describes how tall each of the rows should be
+		gap: <distance> ; How much distance between each rows and columns
+		
+		.first:
+		For example, say grid-column: span 2; to Have it equal full grid
+		
+		Again, DO NOT stress about this now, nor next two, we'll go much deeper into detail in the next sections
+	CSS Flexbox	- More details next Section, 9
+		Grid usually applies to 2-d layouts, flexbox is good for 1-d. So all horizontals or verticals
+		display: flex;
+		Can then change each div to change individual boxes automatically, instead of wrestling with margins padding border ...
+		Divides width/height based on a ratio you set. Automatically creates responsiveness
+	External Networks, ex Bootstrap - Section 11
+		Some more experienced designers created a ton of CSS that works off the box
+		Works in a "flex" like system, that uses a 12 division column system
+	Note, these are all TOOLS to use. Neither is inherently better than others.
+	
+51 8.3 Media Queries
+	A question asked to the browswer, when a certain criteria is met, applies a certain style
+	@media (<breakpoint>){ <Override Styling> } Common example for a criteria is max-width:600px. So when site is less than 600px
+	apply some specified style
+		min-width is going the opposite, starting with thin screen and scaling it up
+		You could also combine them @media (min-width: x) and (max-width: y) { <override> }
+		@media <screen/print> - targeting screens or... print?
+	MDN documents have around 15 different media queries, two of em are
+		hover - Change style when hovering over an object. Good to know
+		300px <= width <= 600px is equivelant to (min-width 300px) and (max-width: 600px)
+		Can use similar combinations as in selectors. ex <breakpoint1>, <breakpoint2> to apply same style to multiple medias
+		Oh fuck we're getting logic up in here, not also comes into play lmao
+	Chrome Dev Tools > Button next to selector, would automatically set size to various mobile/tablet screen resolutions
+		
+52 8.4 Web Design Agency Website
+	Take a design website and style it so it is responsive
+	Yeah that was tough. Wound up using a lot of CSS inspection which felt like cheating, but did get some practice in
+	applying various CSS elements to create the responsive website
+	Comments are not happy with hands not being held anymore
+	
+53 8.5 Another Angela tip to round off the lecture
+	How to deal with procrastination... "Just do it bro"
+	More of a "Learn how to identify how you procrastinate"
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/13
+			Balancing CSS is a three step process. Interestingly you learn them in reverse
+				First: Define flow. This might include columns, rows, and seperate out the divs. Most reactivity goes here
+				Second: Position the things INSIDE the divs. Such as images, text and whatnot
+				Third: Final details. Margins, pads, borders, font details. The works
+			Display properties are important to nail down, they'll either make or break your coding session unless you master it
+			This was just the intro to CSS positioning, next few modules will dive deeper into styling with grid, flex, and boot
+			Hate it or love it (and I hate it) Media queries are giga important. They don't have to be monstrous in scope tho
+			
+Section 9 Flexbox
+
+54 9.0 CSS Flexbox
+	A lot of CSS layouts comes from Newspaper layouts. You can see this in the block structure
+	Used to be able to set tables in HTML to make multiple columns as styling. But since it is HTML, it's not best practice for style
+	This was followed up by using multiple blocks with display: inline; Problem is, blocks often have varying vertical boxes
+		Could then use position: absolute, but shit then breaks following the next HTML element added lol
+	THEN float comes along, from around 2005-10. Make everything float left, then fix as you go. "Kinda Hacky tho" - Angela
+		Remember, float is good for moving images to a corner/side
+		
+	In comes Flexbox
+		Wrap divs inside a div class="container", then css .container { display : flex } to enable
+			We can then add a ton of properties to help create well-flowing documents
+		When working with flexbox, prev. lesson on position no longer applies. No inline-block or nothin
+			Flexbox is given more freedom to create commonly desired websites
+		When you put elements in a flexbox container, it controls their display property now. Width tends to be content based
+			this applys to divs, spans, p's, etc.
+			These will go inline with no gaps between
+			.container is basically a block element. display: inline-flex wraps around content much like an inline-block
+	Code for lesson is a multi-page website leading to the column layouts mentioned above. Then compare to flexbox's simplicity
+		Holy shit Angela is right. Those other methods are fucking awful. And WILL break if slightly altered
+		Oh, goal is to make the index.html a nav bar, very nice.
+		
+55 9.1 Flex Direction
+	Row and Column Layouts
+	By default, HTML processes things top to bottom, left to right. Inline and blocks 
+	We saw last lecture that Flexbox will turn everything "inline"
+	By default, flexbox is in flex-direction: row by default. Things will be stacked in the left/right direction
+		This is the "main" direction, cross-direction would then be columns. 
+		Vice versa if flex-direction is columns
+	flex-basis: <size>; will extend the MAIN direction in the specified size. 
+		This is an example property, but gets the main/cross direction concept
+		Note, this property goes on the child element, not the parent
+	Code - Will want to practice the flex-direction, and how to adjust it to the column axis.
+		First time I had to look at the code, there was a sneaky display: inline-flex; that had to be added. 
+		
+56 9.2 Flex Layout
+	Align, Justify, and wrap
+	One question commonly asked is what properties go in the parent element, and what goes in the child
+	Child:
+		order: <INT> by default, all elements are order: 0, higher orders go to the end. In other words, increasing value
+		<align/justify>-self. Can be used to set an individual item's justification and alignment
+	Parent:
+		flex-wrap: <nowrap/wrap>. Default is nowrap, when there's no more horizontal space, new line is not created
+			Fuckin lol, no-wrap is not hyphenated, it now reads as a command you might say vs supahotfire. He ain't a rapper tho
+			wrap - Will change the property so it'll move onto the next line when no more horizontal space
+			https://appbrewery.github.io/flex-layout/ App to play around with flex-layouts
+		justify-content: <flex-start/flex-end/center>
+			flex-start - default. Everything is pushed up against the left. According to the flex-direction
+			flex-end - pushes things up to the right
+			center - Think about it. Every newbie frontend dev should know this one
+			space-between - Distributes things equally, including gaps. First and last get pushed along the "end" walls
+			space-around - Similar to above, but adds spaces on the ends
+		align-items:
+			Sets distribution along the cross-axis. In a flex-direction row, we'll need to set some vertical space to see a difference
+				Note, align-content only works if flex-wrap is set to wrap
+				We get introduced to a new distance: vh. Stands for viewport height, and is the % of the screen visible vertically
+			flex-start - beginning of the cross-direction
+			flex-end - The end
+			stretch - fills out the entirety of the cross-direction
+	https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+		Cheat sheet showing all the Flexbox tips and tricks, so you don't have to memorize it all.
+		Shit gets complex to get simple lol Definitely like learning a new language
+	Code - No code today, but we need to complete the	https://appbrewery.github.io/flexboxfroggy/ game
+		Goal is to use flex to move the frog to the lily pad. Adorable
+		Interesting. Note none of flex has a left/right direction. It is all relative to flex direction and cross-axis
+		There is an align-content field I straight up ignored, straight up missed a question bc I didn't noticed
+		Flex-box Froggy fucked me up dawg. Shit gets complex quickly. I still don't understand the last question even tho I got it
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/14
+			The difference between failing and completing your goals really is just trying harder sometimes
+				Karla's presentation idk how I was gonna do that, but with a little elbow grease and we got it to work 
+			Flex is essentially a new system to me. All the CSS content prior was child's play because I knew it like the back of 
+				my hand, but with Flex I actually had to try. It will continue to be this difficult as time goes on
+				I'm sorry tomorrow Julio you gotta pick this one up where we leave off here
+			Flex's built in spacing is actually really helpful in designing responsive websites. It may be a little confusing to
+				understand the intricate details, but for the most part the core concept of creating simple responsiveness
+				shines through.
+			If all else, remember Flex is 
+				Started with display: flex, and controls internal element's displays after
+				Wrapping is disabled by default. flex-wrap : wrap must be enabled to wrap to next line.
+				Flex is relative to a main axis, defined by flex-direction. 
+					Justify-content will push to start/end/center of main direction
+					Align-Items will only work if wrap is enabled. pushes to start/end/center of cross-axis
+					Align-content is tricky, but controls space between cross axis.
+					
+57 9.3 Flex Sizing
+	Shrinking and Growing, specifically when going for responsiveness
+	Recall, when putting a bunch of elements within a flex container, everything will be shrunk to contain just the contents
+	Will stack them "similar" to an inline block, along the horizontal row by default	
+	How does Flex determine the box's size? A priority list of course	
+		Content-width < Width/Height < flex-basis < min-width/max-width.
+		The highest of these is what size flex would give.
+	With the default property, if there is a flex container with no properties set, but a few elements like in a navbar
+		Shrinking the size would reduce the width of each element to it's absolute minimum (longest word), after that would push elements off to the side
+		If we set each item's width to be static, 100px for example. If container shrinks beyond that, will default to above ^
+		If we set flex-basis, would overwrite normal width and content width. Again, if bar is shrunk, defaults to default behavior
+		Now the king, min/max-width. max-width by default is all words along a single line. min-width is length of longest word
+			We can set these values as well, overriding all other width properties. 
+			Max-width will say how wide a item can grow to. If flex-basis is smaller, will take the flex-basis
+			In other words, max-width is the max POSSIBLE size
+			Opposite goes as well for min-width
+	Growing and Shrinking
+		Lets imagine a flex container, with a few flex items { flex-basis: 100px; flex-grow: 0; flex-shrink: 0 } aka almost default
+		Shrinking and growing will be disabled, boxes won't decrease in size if window decreases
+		flex-grow: 1; - Each item will grow to fill the container, but reducing to at minimum flex-basis;
+		flex-shrink: 0; - Items will NOT grow to full container. Will start at flex-basis, and shrink at most to min-width
+		Default behavior is grow:0 shrink:1. So Boxes will not grow to fill, and shrink down to min possible 
+			flex-grow/shrink: 1 - Will fill out contents to the fullest it can. But shrink to the minimum
+			flex-basis: auto; - Default value for basis, gives more width to contents with longer words. 
+				Setting to 0, will shrink boxes evenly
+			
+		flex: 1 1 0; - Shorthand way to write flex-grow: 1 shrink:1, basis:0. Since 110 is so common, flex: 1; does the same thing
+			If you write flex: < >1>; Like flex: 2; this element will be twice as large as a flex: 1;
+	Code
+		Again we don't have a code to work with, but are changing an app. https://appbrewery.github.io/flexbox-sizing-exercise/
+		Well basically code. We have to adjust a CSS file to fit boxes to a certain size
+			Not bad at all, was just setting all children items to be flex 1, with another being flex 2; and adding a gap
+		Never mind, resizing threw a curveball lmao
+			Had to update each box's flex: <grow> <shrink> <basis> property for a quick fix
+			
+58 9.4 Project Pricing Table
+	Using Flexbox in practice
+	Use flexbox to create a 3 column pricing bar to dynamically respond to size of screen
+		Note for mobile screens, they all go on one column
+		
+59 9.5 Building a Programming Habit
+	Angela's tip and trick for the module
+	By the way, that little sticky note has been MAD helpful in keeping the programming habit.
+		The trick is to have a habit build into another habit.
+	Bruh, the comment section is simping lmaoooo
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/15
+			It worries me that it took two straight days of effort to learn this content, and how much the future ones are going 
+				to demand for the same outcome.
+			Important to keep in mind though, we now have hands-on practice with flex-box. We're no expert, but we learned the tool
+				Having to apply to apply it in the future is going to be so much easier now the you peeked under the hood 
+			Flex-sizing 
+			
+Section 10 Grid
+10.0 Display: Grid
+	A 2D Layout System
+	Flexbox also has it's limitations, mostly when it comes to more complicated systems
+	Grid makes it easy to make complex 2-d systems
+	Flexbox is great for aligning content along a 1-D line. Horizontal or Vertical
+	Grid is better on 2-D systems. Makes sense, a lot of Flex was straight lines
+		Note, knee-jerk reaction is to use one or the other. But using both is allowed lol 
+		Ex. Set up a grid on a 2-d plane, then could use flex inside one of the grid elements
+		Or Grid inside a flexbox lol
+		https://appbrewery.github.io/grid-vs-flexbox/ A demo comparing each system
+			Grid is inclined to make... well grids. Flexbox won't in above demo, bc/ it squishes divs based on their contents
+	How to create a grid 
+		.container { display: grid; grid-template-<columns/rows>: <First fractional ration> <2nd Fractional ration>; gap: <width>; }
+			Fractional rations are based on ratios. So a 2fr 1fr, first column would be twice as large as second.
+			Note, doesn't have to be just 2 entries. Have as many or few as you need.
+			Could also just be normal widths
+			
+	Code - Make a chessboard with grid
+		There are a ton of divs. Goal is to make a div container and have divs be arranged in a chessboard
+		Since they are alternating, copying the above code, and having 8 1fr's for row and column should do the trick
+		Mine had a weird gap between the divs. Grid tries to use the full length of the screen, so limiting it to 800px was the trick
+	
+10.1 Display: Grid Sizing
+	How to Size Columns and Rows
+	By defining the grid as above, and setting each fixed size as solid x-px sizes. This will inherently make things unresponsive
+	Oooh you can combine grid-template-columns/rows as just grid-template
+		grid-template: <row1> <row2> ... <rown> / <col1> <col> ... <coln>;
+		Not recommended for beginners, but hell yeah I love css shortcuts
+	Setting col as auto, will fill out the rest of the unspecified
+	Setting row as auto, will only try to fit the contents inside.
+	https://appbrewery.github.io/grid-sizing/ Demo website to see some of the various grid uses, like...
+		Unresponsive fixed size
+		Auto-sizing, Fractional-sizing
+	Fractional Sizing - Ratios of how large/small a grid box should be. Already have seen this, fractional ratios #fr
+		Will grow to fix the ratios of a grid. 2fr will be twice as large as 1fr. 1fr being the starting unit
+		row fr will be based off the height of the minimum content for a 1fr I reckon
+		Auto responsiveness by nature
+	Minmax Sizing - Defining the minimum and maximum of a column
+		syntax - grid-template-<row/column>: <size1> minmax(<min size>, <max size>);
+		Will respond until it hits the minimum and maximum size.
+	Repeating sizes
+		Think back to chessboard example and how you had to write 1fr 8 times. Wouldn't it be nice if you could loop it somehow...?
+			grid-template-<row/column>: repeat(<how many repeats>, <size>);
+	If there are less grid elements than there are available grids, will only fill up going from top left to bottom right
+	If there are more grid elements than available grids? Would fit the column as defined above, and row-size based on content height
+		Could auto generate more grids. grid-auto-rows: <size>; 	Will fit the row height to the specified when needed
+	Chrome dev tools is helpful when debugging Grid CSS
+		When you define a grid, chrome tools will give a little tag labeled 'grid'. Activating will show you several nice details
+		Layout tab will allow you to define it.
+	Exercise in the grid-sizing app:
+		Recreate the green grid with the purple grid shown below. Don't forget to resize screen to make sure all elements are correct
+		Technically should only need to target the .container div
+		Holy shit that was easier to style
+		Interestingly enough, there is a .zip file for this code in the course resources, but it was exported to an app for our convenience, how fortunate!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/16
+			The above has been brought to you by wine. I did pretty good note-taking despite being buzzed. I should pursue this more
+			Grid is so much easier to understand than flexbox, but it's good to know each of them. 
+			The making of rows and columns is so much more intuitive than flex, or might've just clicked a little better for me
+			TLDR
+			To create a grid, pick a div and best-practice label it class='container'
+				Set display: grid, then define grid-template-rows/columns, followed by how many rows/columns you want, and their sizes
+				grid-auto-rows sets any extra incoming child elements to the specified height, otherwise sets it to their content height
+				minmax(<min-size>, <max-size>) clamps the responsive height to what is needed
+				auto on columns will fit div to 100% of box. On rows will only fit to content.
+				
+10.2 Grid Item Placement
+	How to layout items in the grid. Aka how to create fancier looking grids. like one that spans multiple rows or columns
+	Common terms. The entire system is often called the grid container. Content blocks inside are Grid Items. Rows/columns are tracks
+		Individual singular blocks are cells, multiple cells can create a grid item. Lines between are called grid lines (gap)
+	Coding example, creating multi-cell grid containers
+		Angela set up a container with 3rem gap, grid-template: 1fr 1fr / 1fr 1fr 1.5fr; Each one just went in one cell
+		However, each emoji is NOT centered, coding exercise 1 is to use grid and flexbox to fix that
+			Literally just a justify-content & align-items review.
+	How to make multi-cell items. 	<selector> { grid-<row/column>: span <number>; }
+		grid-<row/column> is Actually shorthand for grid-<row/column>-start and grid-<row/column>-end
+			Note. Start and end end both are referring to the line you start at, and end at, NOT which cell to start/end at
+			Can also use negative numbers to refer to lines in reverse order. Last is -1, next is -2. So on
+			Start and end can be reversed (start > end) and grid would figure it out. Fuckin ugly though don't do that
+			Auto, just sets initial positioning before you changed anything
+			grid-column: <grid-column-start parameters> / <grid-column-end parameters>;
+		Chrome dev tools really does make it easier to view and understand grid lines
+			
+	Going back to coding example. How do we further set up the grid to follow desired style
+		As it stands, cowboy has span of 2, astro. is next, but giving astro span 2 would just create another column
+			You could either set its order, or set all of its grid-rows and grid-columns
+			Oh theres a shorthandier version for both grid-column and grid-rows
+				grid-area: <row-start> / <col start> / <row end> / <col end> 
+				If you go down this route, you'll likely have to set grid area for ALL items
+	Shifting order around: order: <integer>
+		Order by default is 0 for all elements, higher level orders move to the end, shorter level orders move to the start.
+	Grid can overlay items over each other on purpose
+		Remember, grid-area has to be set for all items if you want to do this
+		Bruh. Grid-area broke my brain. And flexbox froggy returns to mess me up with grid layout
+			https://appbrewery.github.io/gridgarden/		I am writing this much later, and was able to complete grid garden
+			
+10.3 Project Mondrian Painting
+	We're recreating a famous painting Composition No III by Piet Mondrian in CSS using grid lmao love it
+	Angela has mapped out the exact coordinates for the painting already
+	Some hex codes have been provided for us.
+	Also starting from base HTML, haven't seen that in several projects.
+		Wasn't too bad in the end, just marking how many rows/cols and how many pixels for each was the trickiest part
+		Using grid to span out the boxes as needed wasn't too bad, such an easy tool to use
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/17
+			Today I finished the last 2 sections on CSS Grid, which turned out to be really easy to use
+			The act of defining rows and columns, as well as how many of each an item takes clicked super well in my head
+			Grid and Flex together are a super handy combination, it was worth learning both
+			Seperating the day into two learning sessions did not feel well, but we got it all done in the end
+			
+			Summary for the day
+				grid-template-rows and grid-template-columns take a variable number of parameters, one for the size of each row/col
+				grid-area takes in the parameters for <grid-template-row> / <grid-template-column>
+				grid lines start at 1 from the left, all the way to n on the far right
+					Same goes from top to bottom
+					grid-start/end go based on these lines. ie start on line 1, end on line 4. Will span 3 cells 
+					
+				For an individual item, specify how many cells it takes up using grid-row or grid-column
+					Both the above are shorthand for grid-<row/col>-start and end. 
+					Grid-area takes in all four parameters listed above <row-start> / <col-start> / <row-end> / <col-end>
+				grid-order works the same way as in flex. Higher order moves to the end, lower to the beginning.
+				
+Section 11 Bootstrap
+
+11.0 What is Bootstrap
+	External CSS Layout Systems, aka external tools
+	Bootstrap comes with pre-made CSS Elements that can be easily added
+	Built on top of flexbox using a 12 column system
+	On top of just being simple, Bootstrap really does look nice
+	CSS Frameworks
+		Pre-made CSS Files that have pre-defined styles that will affect your elements by just adding specific classes
+		Tailwind, Foundation are also popular frameworks
+		Bootstrap is the most popular third-party of these. Comments are vouching for Tailwind too
+		Pros - Easy and fast to use. Also keeps the styling consistent. Browsers are already supported
+		Cons - "Class Bloat" A lot of styling goes into the HTML elements for styling. Customization is tough to overwrite
+		When-to: When you want to create a mobile-first website that has to look slick, use Bootstrap
+		When-not: When you're using a quick HTML/CSS app, or when you want full control of everything
+	How to add Bootstrap
+		Include via a cdn link in the head section <link href="https://cdn..." /> 
+		If there is some code that needs to be executed, script at the end of the body section <script src="https://...> </body>
+	Code Exercise - Update a website quickly using Bootstrap
+		Four to-do's that will add a flower to center of the screen using bootstrap
+		First is to include bootstrap cdn, will not need script for this one. Found on https://getbootstrap.com
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		Also look in the docs for the Component > Card to learn more about the target goal
+			https://getbootstrap.com/docs/5.3/components/card/
+		This was probably the best intro to bootstrap I could've gotten. I used the docs to piece together how a card works.
+		and slowly recreated it using the documentation. Sure the code was *right* there to copy and paste, but nah not today
+			If you want to override a bootstrap element, make sure the <style> tag or <link> to a css goes AFTER the bootstrap import
+
+11.1 Bootstrap Layout
+	Understanding the 12 column Bootstrap layout system
+	Made of 3 components
+		div container	- literally just a <div class="container" ...>
+		div row		Similar to above, but as a child element to the container
+		items	Last element that goes within both, div class col
+	Bootstrap will try to fit all columns in a row evenly. 
+		Is auto responsive, will automatically set widths depending on screen sizes
+		Can change behavior based on the -<sm/md/lg/xl/xxl/fluid> added to the container. 
+			These say at what screen width would use on varying screen sizes. Larger sizes mean smaller screens get 100% width
+	Sized Columns
+		Can set a col-n, where n is the number of columns that item should take up in the row
+	Bootstrap has auto breakpoints set. In general sm is for mobile, md is for tablets, lg is for computers, xl idk maybe tvs
+		Gets rid of a lot of media quieries because of this
+		If you specify col-sm-2, it'll behave like 2 columns on any device width mobile and above. Any smaller and width is 100%
+		Could also define multiple breakpoints. Such as col-sm-12 col-md-8 col-lg-4. On large screens will take up only 4 cols, etc
+	Coding exercise - Fill out the three exercises on https://appbrewery.github.io/bootstrap-layout/
+		Felt a little weird but I got the columns to line up
+
+11.2 Bootstrap Components
+	Learn to use the pre-built and pre-styled components
+	Button Components
+		For a <button> tag, you could easily style buttons using the class "btn btn-<primary/secondary/success/danger> etc
+	Cards
+		Going to documentation is super important when using bootstrap. The cards sections was literally just that
+	Navs
+		Bootstrap Navbars are top tier turns out. Yo hold up they are really nice
+			Of course, going to the documentation is going to be your best bet
+		Bootstrap also has an 'Examples' tab, that will give example code for some really nice components
+	Rest of the lesson will be on building a whole website semi-easily using bootstrap
+	
+	
+	Coding Exercise already - Practice creating bootstrap components
+		Create a green button with text okay		Simple enough, just adding class="btn btn-success"
+		Rest of the lesson will be on building a whole website semi-easily using bootstrap
+		First TODO: Copy and paste the navbar found on https://getbootstrap.com/docs/5.3/components/navbar/
+			Note, will need to add the src tag found on the Bootstrap website to the end of the body tag
+		Edit the NavBar to look like the solution code, and add an svg as an icon
+			These can be found on Bootstraps Icons tab. You can copy/paste the straight bootstrap import svg item, or just save it
+		Already we have a professional looking NavBar, with very little typed out code
+		It is not a bad idea to take bits and bobs from the bootstrap examples. First main body of solution did just that
+		Did the same for the features
+			Note the buttons don't look the same as the bootstrap's websites. This is because these styles are actually custom
+			You can tell it is that way when you inspect the element and see the css is coming from a .css file, not an .scss
+			
+		Aight, now we're on our own. We're going to be adding a carousel from the documentation next
+			Another twist is to try and get the carousel to line up with the rest of the website nicely.
+			This is the one that broke me. Turns out I had to put the whole thing in a container
+		This is a quick example on how fast you can make a website using Bootstrap
+	
+	Spacing
+		The notation for adding padding, margins, borders, etc
+		class should include: <property>-<sides>-<size>
+	Fuckin Dark Mode!!
+		Bootstrap auto makes a dark mode hell yeah
+		This one also broke me. I could not get it to work for some reason. Turns out VS code injected something the html tag
+		that was overwriting the dark theme? Weird.
+	One more thing. https://www.w3schools.com/bootstrap/bootstrap_templates.asp
+		Place where you can find free themes using bootstrap that cost little to nothing to create a fancy looking website
+	Bootstrap Theme's tab is also a great place to get themes. But these are not free, they are really pretty though
+		A little google searching does help to find good themes
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/18
+			Today was a long one. Bootstrap is handy but it is also like learning a new language. A mountain at first for sure
+			This came at a handy time however. Karla sent me her website and it's almost entirely in Bootstrap
+				Can literally use what I've learned here and apply it immediately
+			TLDR
+				Bootstrap is a third-party CSS framework that comes with pre-built components to quickly style a website
+				https://getbootstrap.com/ is your best friend when using bootstrap. Make sure to add...
+					<link> tag found on landing page to be able to use bootstrap. Put this in the <head> tag
+						Any CSS Overrides happen AFTER this link
+					<src> tag found on same landing page, put this right before the </body> tag
+				Bootstrap uses a 12 column system. These are put inside containers, which are auto-responsive
+					Items inside containers will try to evenly fit in the bootstrap container row
+					Or they could be set using class="col-n" with n being the number of columns it should take up
+					col also can be set to sm, md, lg, etc. These are to control how the div looks on different screens
+						Can have multiple in the same class
+				There is NO shame in using the bootstrap docs and examples to find really nice and professional looking
+				components to add to your website. I know you're tired but getting that moving website up in an hour is impressive
+		
+11.3 TinDog Project
+	A start up website built with Bootstrap
+	Tinder for dogs lol - But realistically we're trying to recreate  https://appbrewery.github.io/tindog/
+	Use BootStrap's Snippets and Components to do this
+	Provided are svg's, html starter code, text readme, css-gradient background, and goal images with further details.
+	
+	Title by itself took me close to an hour. Getting all the right proportions was rough, defaulted to investigating the page 
+	source of the main solution for the last little details. Margins and paddings are a proper nightmare with bootstrap 
+	
+	Features didn't go too badly. 
+	
+	Fucking Testimonial was another half hour
+		Was good to really grapple with the container > row > col concept I guess, still super frustrating to learn though
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/19
+			Course progress is really starting to slow down, hopefully this was just for the bootstrap project
+			I spent about 2 hours on that website, and I did manage to complete it and I will admit it does look well and modern
+			Does not change the fact it was a struggle. The earlier-course me knew there would be these hiccups
+			TLDR
+				It is worth doing these struggle challenges. You come out with more knowledge that way
+				The bootstrap course did feel fairly rushed, but stepping into the fire really solidified the basics
+				Next course is on Web Design, a really good set of principles to know. 
+					Style Karla's website using the basics you've learned above, don't sink a ton of time just touch it up
+					Take the web design lessons and revisit it then.
+					
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/20
+			No Angela course today, I followed through on looking at the website Karla and Ceci designed.
+			It was a struggle, currently I am sitting on hour 4 and managed to fix the unresponsive NavBar
+				Bootstrap does NOT make it easy to figure out where and when certain flexes and styles get applied
+				Was a mess of trial and error to figure it out, thankfully I got there in the end
+				Google's dev tools have been a massive boon in debugging, use them more often
+			Tomorrow I will continue work on the course. Learning more about web design in general
+			
+
+Section 12 Web Design School
+12.0 Intro to Web Design	
+	Aesthetics are EVERYTHING
+	The website has seconds to make a good impression
+		Looking at pennyjuice.com. It looks like a 90's html site. Looks awful when you compare it to the redesigned one
+	Design is powerful, and could make your brand look more expensive
+	4 Key Principles
+		Color Theory
+		UI Design
+		Typography
+		UX Design
+	
+12.1 Color Theory
+	Science of picking the right palette for your company
+	Mood - Conveying certain messages to your user based on color
+		Red gives off energy
+		Yellow grabs attention and invokes joy. Great for quick glances
+		Green - Freshness, growth, saftey - Often used for food
+		Blue - Stability, Trust, serenity - Often used by companies and banks
+		Purple - Royalty Wealth Femeninity
+		All this is basically to help you decide what mood you want a site/brand to invokes
+	Combining colors
+		Two colors near each other on a color wheel combined create 
+		Analogous colors
+			Often harmonious and looks well together
+			Often does not stand out on its own
+		Complementary Colors - On the opposite ends of the color wheel
+			Clash and stands out. Brings out each of the colors
+			Causes color discord. Do not style text with these
+			Try to keep it to logos and icons
+		Triadic/Quadratic colors
+			Form a triangle/square on the color wheel
+		Helpful sites
+			https://color.adobe.com/create/color-wheel 		Allows you to move around on the color wheel and auto pick other colors
+			https://colorhunt.co 		Designer made color palettes you're free to use
+
+12.2 Typography
+	Basically there are two large familes you should know about
+	Serif
+		They're the ones with the little feet on them. Inspired by marble carvings
+		You'll often see this in architecture, and is seen as authoritative, serious, older
+		Age of a font
+			The ratio of the thickest part of the text to the thinnest often tells you a fonts age.
+			More modern fonts have really thin thins, and really wide thicks. Older fonts have a better balance of this
+	Sans Serif
+		Does not have the little feet on them, are often a lot easier to read.
+	Moods of a font
+		Serif - Traditional, Stable, Respectable. You can see a clear example with Vogue magazine
+		Sans Serif - Simple, Straightforward, Novel, Contemporary. Often favored by start ups
+			Often used for body text on a site because it is easier to read
+				Look for a lot of kerning, differing letters, open shapes
+	Try to keep to two fonts max
+		Look for fonts that have similar moods and time-eras
+		For contrasts, find fonts with differing serifs and weights
+		
+			
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/21
+			I continued the lessons online and learned about the basics of color theory and of fonts
+			But for the most part I've been wrestling with Karla's code again	
+				Re-working and recreating so much of the bootstrap is such a headache, every design fix feels like a mountain
+				I will brainstorm a better way to work through this tomorrow, as it stands, this is unsustainable
+				
+				
+12.3 User Interface Design
+	Our brains are wired to look at the bigger, boxier looking stuff first
+	1 Hierarchy
+		Can establish in a number of ways
+		Color - Something that has a more 'poppy' color will grab attention quicker
+		Size - Bigger items will often grab more attention
+	2 Layout
+		Creating unique designes will create interest and will keep users engaged
+		Around 40-60 characters per line reading
+	3 Alignment
+		Text within similar elements should be similarly aligned
+		Try to keep most items on a minimum number of alignment points
+	4 White space
+		Luxury designers often put a few bags around white space makes it looks much more expensive
+	5 Audience - Can often be the most important part
+		Design to your audience
+	
+	It is important to be flexible, but keep the above 5 key components
+	
+12.4 User Experience Design
+	Meant to be invisible, and we should design to this. Also has 5 pillars
+	1 Simplicity
+		It is often better to go simpler than more complicated. 
+	2 Consistency
+		Keeping elements consistent across a site is helpful
+	3 Reading Patterns
+		People often follow the F-pattern. Scans the top line, then down the left, occassionaly moving to the right again
+		The Z pattern is also common, going for tl, tr, bl, br. 
+	4 All platform Design
+		As much as you hate it, you have to design for mobile device nowadays
+	5 Don't use your powers for evil
+		Or do it because it is profitable. 
+		Dark patterns - Beneficial to the company, but not the customer
+		Turns out Europe has their own 'Frontier Airlines' Ryanair lmao
+	
+12.5 Web Design Principles
+	Will be creating our own 'Hotel Website' in Canva from scratch using what we've learned from this module
+		Canva is a great tool for creating some sort of design
+	Turns out web design is fuckin tough. But that is all part of the learning process. 
+		Remember, you've learned from Karla's presentation, just trying is most of the battle.
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/22
+			Turns out the brainstorming came in the form of today's lesson, which involved using Canva as a starting point
+			While some of the design is kinda tough to implement with CSS, it was really nice being able to throw something together
+			Will make it REALLY easy to get something Karla wants as well as what is in my abilities.
+			I'll continue with the course tomorrow, but it is going to be a capstone project... and as much as you dread it
+				It's time to redesign your website
+			TLDR
+				You may be an HTML/CSS/Javascript guru, but web design is an entirely different beast you also have to learn
+				Front end work is difficult, having to balance all these tools to make things both function and look appealing
+				User Interface and User Design have 5 pillars each that help designs flow well and look amazing
+
+The tradgedy, my final review for  Saturday 23 were somehow lost :(
+I'll try to recap them here
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/23
+13.0 Capstone Project 2 - Personal Site
+	I decided now was as good of a time as any to redesign my current juliolopezjr.com website. Turns out it is 5 years old now
+	I opened up Canva and sketched out something I thought looked nice  https://lopez-design-projects.my.canva.site/personal-site-wip
+	
+	
+			I wound up fighting a bit with the header (again) but got it looking very similar to the sketch
+			Learning Flex has been a huge help in lining things up the way I wanted them to
+			Having a goal image to work off of is actually super helpful. Will have to employ this with Karla for her site
+			
+			Oh wait, I remember why I didn't work much on this Saturday, I used a bunch of time on leetcode. 
+				I should keep a log of that as well, it's handy in keeping things noted
+				
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/24
+			Today was just a working on my capstone. I re-signed into my AWS account, and hunted down ye' ole site, pulling basic
+			starter images. This site aged horribly, while it is a slight cringe to look at I am very happy to be updating it
+			
+			I got to apply a ton of techniqued learned through this course so far. Namely Flex, Bootstrap, AND Grid
+			I also have a goal image to work off of from Canva, it is really helpful in getting everything up and running
+			With some elbow grease, I was able to get the Header and the About Me section up and running, and looking stunning!
+			
+				
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/25
+			Just a few more adjustments until I am finished with my capstone. I have everything both lined up nicely AND
+			set up for mobile viewing as well.
+			I also have to complete some of the text for the project itself. Namely the about me section and the project descriptions
+			I'm glad I took the time to take this course. If anything I completed something actually design facing that can 
+			be used for a long time!
+			I bit the bullet, I put the old one to rest and replaced it with the new files. Thank you old-site, you served me well
+			
+				
+14.0 Introduction to Javascript ES6
+	JavaScript is the language of the internet. In the dawn of the internet, NetScape is what held the main throne
+		Eventually became modern day Mozilla Firefox
+	Whenever something server side was needed, it actually needed a whole server. JavaScript was created because they thought it would be wise to have a simple scripting language that the browser could run. It was made in 10 days
+	You could actually turn off JavaScript for browsers, and will give some interesting side affects
+	JavaScript is an interpreted language, Java is compiled. JavaScript is now fucking everywhere
+	
+14.1 Javascript Alerts - Adding Behavior to websites.
+	You can execute code straight in the chrome browser using dev tools > Console
+		Adding multilines requires Shift-Enter
+		Another way is Dev Tools > Sources >> Snippets. Gives you a GUI to to write the code as you wish.
+	As always, MDN Docs are your best bet for documentaion on Javascript
+	Remember. It is OKAY to not take vigourous notes on Javascript. You know what a function, syntax, and semicolon are.
+	Most programmers best practice
+		Most people will use double quotes for strings
+		"All code in any code-base should look like a single person typed it, no matter how many people contributed."
+			Fuckin based
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/26
+				Not much to say, I made the website go live and troubleshot some last changes. Congradulations :)
+				
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/27
+				Leagues came out today and I allowed myself a small lesson, but the STREAK MUST LIVE
+				Today was a lesson in JavaScript. I have a feeling I will be blowing through this one fairly quickly.
+				
+14.2 Data Types
+	Primatives
+		Strings, Numbers, Booleans
+	typeof(<item>) will return the data type
+
+14.3 JavaScript Variables
+	Setting information for the computer to remember
+	prompt(<String>) will prompt the user for some entry
+		Useless without setting a variable to contain the entry
+	You can think of variables as named boxes of information. You can refer to the contents by calling the box by name
+	
+14.4  JavaScript Variables Exercises
+	We're going to be practicing what we know about JavaScript variables with a coding exercies
+	This Module shows its age fr. Since the code explanation is here, while the instructions are the next set lmao
+	Code - Switch the contents of A and B
+		Yep, just set a temp variable to switch A and B.
+	
+14.5 Naming and Naming Conventions for JavaScript variables
+	Chrome JavaScript will store a variables within the cache. Empty Cache and Hard Reload is needed for getting rid of these
+	Giving meaningful names to your variables. For both you and everyone
+	You cannot name your variables the same name as Key words
+	Variables cannot start with a number, and cannot contain spaces
+	Variables can only contain Numbers, Letters, &, and _
+	JavaScript prefers CamelCasing. JustCapitalizeEveryStartingLetter
+	
+14.5 String Concatenation
+	Combining Strings
+	Using + signs on Strings will combine them into one giga string.
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/27
+				Another quick lesson. This really is just the basics in JavaScript. 
+				I will need to blow through these lessons quickly, I am not learning anything new and would like to get back 
+				to stuff I am still unfamiliar with.
+				
+14.6 String Length
+	We are taught about the length property of a string here
+
+14.7 Substrings
+	I actually forget how to do that a lot of the time
+	slice(<start index>, <end index>);
+	Ctrl+/ comments current line. Nice
+
+14.8 Chainging casing in text
+	Property .toUpperCase(); on the end of a string. Returns the uppercase string.
+			 .toLowerCase() does the opposite
+	Coding problem involved slicing string and capitalizing first letter
+	
+14.9 Basic Arithmetic
+	Pemdas is applied in JS? Very nice. In general it's best to add parenthesis to make it clear what you want the output to be
+	
+14.10 Increment and Decrement
+	I don't know why I'm so hesitant to use this in JS, I'm so used to using the +=, which is funny because += is more complicated
+	
+14.11 Functions
+	function <function name>(<parameters optional>) { <Code> };
+	Functions are first instantiated, then called later.
+	
+14.12 Karel the Robot
+	https://stanford.edu/~cpiech/karel/ide.html		A Stanford Robot that you can give instructions to.
+	This is the greatest thing I've ever seen
+	Challenge is to get Karel into the top-right corner
+		Karel is a little bitch for not taking my fori function
+	Actually this was a fun introduction to code, Karel must have helped so many students
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/28
+				Launching through the lessons was probably the best thing I could have done, I would have quickly lost motivation
+				I finished a big chunk of the module in a lot smaller time, spending time on the coding exercises where needed
+				Karel was such a fun little side project. So simple and such a good learning tool for functions
+				
+14.13 Parameters and Arguments
+	Variables used within functions to do *something* with it
+	We had a coding exercise that high-key gave me an existential crisis. The weeks of life article sent me into a spiral for a second
+	I don't know how College Julio was such an existential mess. 5 minutes of this at 28 ruined me, idk how he did that everyday
+	
+14.14 Outputs and Return Values
+	return <value> at the end of a function. Can then apply that to a variable that calls a functions.
+	This shit is actually really confusing without my degree, thankfully I did the work previously for years to be able 
+		to just blast through this right now
+		
+14.15 Set your Expectations with Angela
+	Haven't seen one of these in a long while. 
+	Basically just a rant on Angela saying "Coding is HARD". Coding is neither easy nor hard, it's work. Work at it and it'll get easier. Don't work on it, and it'll be harder.
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 11/28
+				These JavaScript tutorials are really dragging me along. I don't think I will be doing most of the coding exercises
+				next module. It's my bread and butter since I've been doing the LeetCodes. 
+				
+			
+Section 15 Intermediate JavaScript
+
+15.0 Random Number Generator Javascript	
+	Math.random(), returns a random number between 0 and 1. 16 decimal places
+		Oh god, it doesn't accept parameters... Using MDN docs to try and simulate a "Between p1 and p2"
+		// Absolutely Jank
+		function getRandomArbitrary(min, max) {
+			return Math.random() * (max - min) + min;
+		}
+		
+15.1 Controls and Conditionals
+	Quick lesson on if/else statements
+
+15.2 Comparators and Equality
+	Remember in JavaScript, === will check for equality AND type. == will not check for type, so 1 == "1' is true. but 1 === "1" is false
+	
+15.3 Combining Comparators	
+	You're quick intro to && , || , and !
+	
+15.4 Leap Year Coding Challenge
+	Using conditionals, return if a given year is a leap year or not
+	
+15.5 JavaScript Arrays
+	Storing a lot of data into one single container
+	<arr>.includes(<parameter>); will return true or false if the parameter is in the array or not.
+	
+15.6 Adding Elements and Intermediate Array Techniques
+	Looks like a fizzbuzz problem. Turns out... tech market in UK is awful lmao
+	<array>.push(<element>); will add an element to the array.
+	<array>.pop(); will delete the last element of the array, returning it.
+	Sorry I got stuck fighting with the Chrome console to run my code. Said fuck it and wrote it in VS
+		Best part of the lesson today is the russian hacker story		https://www.jitbit.com/alexblog/249-now-thats-what-i-call-a-hacker/
+		fuckingcoffee.sh 	is prime
+		
+15.7 While Loops
+	You know how to work with these, it's good to have the warning that you should be very careful with while loops, since it's
+	very easy to create infinite loops that will eventually crash.
+	
+15.8 For Loops my beloved
+	while is more useful for state
+	for loops are better for iteration
+	Coding challenge is the fibonacci numbers in a for loop
+		Yep it was just that. Good news though, the module is over, I knocked it out in a day. 
+		
+15.9 Tip from Angela - Retrieval is How You Learn
+	2x Angela Jump Scare never gets old lmao
+	Another quick "You gotta try it to learn it" speech. I hope the best for the other students in the course	
+		A lot of the comments were just NOT picking up the programming principles, and I don't like seeing that frustration
+		
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/1
+			Bro I am cranking through. I'm so excited to finally be working on stuff that I haven't seen in a while. 
+				It might be time to split up this text-file into something a lot more robust. 
+				These JavaScript notes are ass compared to my html and css lessons, but at the same time I don't need these notes as much
+			Finally completed the JavaScript modules. Didn't really give me much unfortunately but they're ticked off now.
+			Up next is learning about the DOM and manipulating it with JavaScript. I'm really hecking excited.
+			
+			
+Section 16: The Document Object Model (DOM)
+
+16.0 Adding JavaScript to Websites
+	So you know how you can create an alert in the online version of the web? How would we do that in an HTML file? 
+	Inline Javascript
+		attribute onload="<JavaScript code>"
+	Internal JavaScript
+		Very similar to CSS
+		<script type="text/javascript"> <JavaScript Code> </script> 		At the end of the body
+	External Javascript
+		<script src="<javascriptfile>.js" charset="utf-8"></script>			Again, put this at the end
+		And in the .js file write out your code
+		You put this at the end, an example why is because, what if the element the code is for doesn't exist yet? 
+			Best practice is to put the script at the end for everything has a chance to load.
+
+16.1 Introduction to the Document Object Model (DOM)
+	Up to this point, all our code has been very static. We plan, design, and implement. But how would we add interactivity?
+	We would have to change our content on the fly. 
+	The DOM catalouges the web page that we can select and change. It takes the overall view of the page and then maps it into a tree-like structure.
+	HTML Tree Visualizer is an add on that helps display this structure
+		https://chromewebstore.google.com/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg
+	Typing 	document 	into the chrom dev tools will show you the base html file that is being displayed
+		You can then start adding .firstElementChild and it will show just the tag selected.
+		When you find the element you want, you can save it to some variable
+		You can change the innerHTML to change the text that is being displayed 
+		var heading =  document.lastElementChild.lastElementChild.firstElementChild.firstElementChild.firstElementChild.firstElementChild;
+		On our web page will change the title of our personal site lmaooooo
+		innerHTML is just the text within the tags
+		.style.<attribute> = <value>
+		.click() would simulate a click on a selected element
+	Objects in the dom have Properties and Methods
+		Properties are things that describe the Object
+			Attributes and styles
+			Often received by the . property
+			So element.style should return all the styles of an element.
+			Properties can be GET and SET 
+		Methods are what the element can DO
+			You sometimes know them as functions available, always finished with ();
+			The difference is that methods are something that an Object can do. 
+	Coding challenge. Take the given .zip file and open a server. Then use the DOM to try and change the third li text to your name
+	
+16.2 Selecting HTML Elements with Javascript
+	We saw this in the previous lesson using .querySelector() to select specific tags
+	You can also get multiple
+		.getElementsByTagName(<name>) will return an array of elements
+			Note that Elements is plural. You won't be able to apply a .style.color property to an array. Fuckin JavaScript
+		.getElementsByClassName(<name>) will get an array of items that all have the specified class name
+			Will ALWAYS return an array, so that means array props and meths (I know that's not a thing I wish it was tho)
+	Returning singles
+		.getElementById(<name>)
+			Remember, ids should be unique, so you will not receive multiple elements on the return here
+		.querySelector(<CSS Selector(s)>)
+			You can select elements based on their CSS Syntax selector. 
+			Multiple does not seem to be allowed, will return the first if multiple are found
+				.querySelectorAll(<CSS Selector(s)>) will return an array of all of them
+	Generally, query selector and all will be what you use to target specific elements, elements by id and such are too broad
+	Coding Challenge. Change the Google text color of the li google link to steelblue
+	
+16.3 Manipulating and Changing CSS Styles with Javascript
+	We saw previously that we can change the .style.<attribute> of a selected element with JavaScript 
+	But might look a little differently because of JS's camelCase
+	For example
+		font-size: 3px; /* CSS */
+		fontSize = '3px' // JS. Note that everything has to be specified as a string
+		
+	Coding Challenge, change the button background color to be yellow
+		https://www.w3schools.com/jsref/dom_obj_style.asp		Goddam
+		
+		
+16.4 Seperation of Concerns: Structure vs. Style vs. Behavior
+	HTML is for Content only
+	
+	CSS is for Style
+	
+	JavaScript is for Function
+		But... what if you have to change a color after a button? 
+		We could use something called a .classList property
+		<element>.classList			Returns an array of all the classes the element has
+			You can then use a .add(<classname>) method to add that list of classes
+			Then in the CSS, the <classname> selector will apply the style
+			.remove(<classname>)	Removes the specified tag name
+			.toggle(<classname>)	Adds the style if it's not there, removes it if it is
+			
+	Coding Challenge: Add a .huge class in css to make font-size huge, then go into the console and apply that to the h1
+	
+16.5 Text Manipulation and the Text Content Property
+	innerHTML is not this? Fool
+	innerHTML will give ALL the inner HTML, this means we can add inner HTML tags within this text ourselves
+	
+	.textContent will just change the text of what you want to change
+	
+	Feels really weird seeing this after the seperation of concerns lesson
+	
+16.6 Manipulating HTML Element Attributes
+	Attributes are "things that get colored light blue in vscode". Everything that goes inside the tag that are not the tag names themselves
+	<element>.attibutes 		Returns an array of all the attributes
+		<element>.getAttribute(<Attribute Name>) 		Will show the specified element's attribute
+		<element>.setAttribute(<Attribute Name>, <Value>)		Note the two parameters
+		
+16.7 20 Minute tomato lesson featuring Angela
+	I swear she's talked about this before, but I can't find it in the notes. 
+	Oh wait, I remember now, I zoomed ahead and picked a random video, and landed on this. The 20 minute trick actually helped a lot
+	Several times these weeks I told myself I'll sit here for 20 minutes and wound up taking a full hour
+		Today was literally just that lmao
+		Keep it up homie you're doing great
+		
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/2
+			You can tell by the sheer volume of notes you learned something today lol
+			I haven't used this before, so it was nice to be able to apply myself towards something new
+			
+			TLDR
+				The DOM is a tree-like structure of the webpage being displayed, with children elements and whatnot
+				JavaScript has access to this tree like structure, and can select elements using certain keywords
+				examples:
+					.querySelector(<CSS Selector>)
+					.getElementById(<Unique ID of an HTML Selector>)
+					.getElementsByClassName(<Class Name>)[0] 	First element of an array of elements with specified classname
+				You can change a crazy amount of HTML/CSS using JavaScript, including
+					.style.<allStyles>
+					.attributes
+					.textContent
+				JavaScript can be added inline, internally, and externally, just like CSS
+					External JavaScript goes just before the </body> tag. You saw this in the BootStrap module
+				HTML is for Content. CSS is for Style. JavaScript is for Function. Keep these seperated for clean code
+			
+			
+Section 17 Boss Level 1 - The Dicee Game
+	Create a game that throws two dice, and on refresh will reroll and announce who's is higher
+	
+	Step 0 - Download the Source Code
+	
+	Step 1 - Create an External JavaScript File
+	
+	Step 2 - 6  Completed the dice game
+		Even did a bit extra and added a button to reroll automatically. Felt kinda cool
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/3
+			We completed the Dice Game. It involved using JavaScript DOM Manipulation to change the img src to point a dice img
+			We followed proper OOP principles and broke out functions into smaller pieces where applicable. 
+			I really thought it would be scary working like this, since it's the first time I used JavaScript like this
+				but thankfully it was relatively straight forward!
+				
+				
+Section 18 Advanced JavaScript and DOM Manipulation
+
+18.0 What We'll Make: Drum Kit
+	We'll make a drum kit that will listen for key strokes, and when you click a button it'll play the drum sound
+	
+18.1 Adding Event Listeners to Buttons
+	Currently we're just in the starting code for the module. It is a simple navy-blue background with an h1 Drum Kit	
+		There are 7 squares with letters wasdjkl that will eventually be listening for key strokes and clicks
+	<element>.addEventListener(<type>, <listener>);
+		https://developer.mozilla.org/en-US/docs/Web/Events#specifications 		For a list of event types to use. click is a common one
+		listener is usually a JavaScript function
+			VERY important, do NOT add the () to the function name. JS will call the method immediately at runtime
+			Leaving the () out will make JS look for the function by name when event listener is activated
+	... Angela is giving the weirdest irl example of the addEventListener function lol
+	Anonymous functions	
+		Functions that do not have a name, often just refered to as function () { <code> };
+		
+18.2 Higher Order Functions and Passing Functions as Arguments
+	Ah yes, Advanced JavaScript 101
+	Oh interesting, selecting an element in the Chrome Dev Tools has a chance to give you a $ variable. Typing this in the console will show you that element
+	Bruh it took until now to use the word parameter lmao 
+	SHE SAID THE LINE 
+		Functions are variables!
+	
+	Imagine having two functions add(n1, n2) and multiply(n1, n2) that each do what you imagine, how would you make a calculator app that could call both?
+	
+	function calculator(n1, n2, operator) { operator(n1, n2) } . With operator as a function
+		Functions that take other functions as arguments are called higher-order functions
+	
+	debugger; <shift+enter>
+	<function name> 	will bring up the chrome dev tools debugger that is wild
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/4
+			Bit of a short lesson today, but did learn some interesting stuff. 
+			The JavaScript lesson was a good refresher, especially in how anonymous functions and immediately called methods work
+			Formally learned how to addEventListener s. Computer Science isn't hard, you just have to put the hours in lol
+			
+18.3 Playing Sound Using Javascript
+	let audio = new Audio('audio_file.mp3');
+	audio.play();	
+		Simple enough, Audio is a type of object, with play() as a method.
+		https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement		There are a ton of methods you can call on it
+		
+	You can use the word 'this' to reference the element that triggered the event. Super handy for passing the element as a parameter
+	
+18.4 Switch Statements in Javascript
+	My Leet ass was already dreaming in Maps lmaoooo
+	switch (<expression>) {
+		case 1:				Each case is checking to match on the switch expression
+			<code>;
+			break;			Break ensures that multiple switches don't trigger 
+		case 2:
+			<code>;
+			break;
+		...
+		default:			The "else" statement, runs only if no cases matched.
+			<code>;
+	}
+	
+18.5 A Deeper Understanding of JavaScript Objects
+	Imagine you have multiple versions of one similar "something", which could be anything. Lets use a worker as an example
+	To store worker information, you might want name, age, skills, etc
+		If you have just one, cool you can store them in multiple vars if you want
+		But if you need to scale up, best to have an object capture that
+	let objName = { name: "Timmy", age: 20, ... } 
+		Can then reference the information as objName.property		Property being the key to each of the value pair
+	Different objects get different properties depending on their use/function
+	let houseKeeper = { name: "Anna", experience: 3, preferredWork: ["laundry", "dishes", "lobby"] } 
+		Note multiple data types can be put within the Object
+	Object Factory
+		Can also be called Constructor Function
+		function HouseKeeper (name, experience, preferredWork) { this.name = name; ... } 
+		Note the capitalized first letter, tells JavaScript and human this is a special function
+		Initialised as let houseKeeper1 = new HouseKeeper("Anna", 4, ["lobby"]);
+
+18.6 Objects, their Methods, and the Dot notation
+	Methods are the functions an object can run. Remember, you can put these within the Object Constructor
+	Methods get (), Properties do not
+	
+18.7 Using Keyboard Event Listeners to Check for Key Presses
+	Opens with a warning that keypress is deprecated, and we should now use keydown lol
+	You addEventListener to the document itself lmao makes sense
+	document.addEventListener("keydown", function(event) { 			This parameter allows us to tap into the event that triggered
+		
+	});
+	
+18.8 Understanding Callbacks and How to Respond to Events
+	Reminder, Higher order functions are functions that take functions as parameters to functions
+	The 'inner' function is called a Callback function
+		You saw these most prominently in the addEventListener function
+		We do not call the function, only JavaScript and the event that triggered the event
+
+18.9 Adding Animation to Websites
+	Bro I hecking struggled with this
+	I was able to add the animation, but the animation 'sticks' to the dom
+		FUCK it was just setTimeout. This was so janky when I tried it by myself lmao
+		Asynchronicity fucking sucks sometimes
+		
+18.10 Tip from Angela - Dealing with Lack of Progress
+	Dude, there have been some LIVID people in the comments section below. JavaScript is hard but the frustration is palpable
+	The praise for getting this far is nice, not everyone knows how much I've worked this
+	Progress is not always visible, and it always seems to be relative. 
+		You could have learned so much, but you'll always have to learn something new, causing constant frustration
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/5
+			This really was an Advanced JavaScript lesson. Functions as objects is a tough one to understand
+			TLDR
+				While not explicitely told, we learned about Classes today. Apparently added in ES6 while this couse is ES5
+				Classes return an object with specified properties and methods, that are useful when creating multiple of "something". 
+				This could be used to model stuff like cars, animals, people, professions, like literally just "something"
+				Using the dot notation we can access these properties and methods
+				addEventListener often returns an object most often referred to as "event" or even just "e"
+				Callback functions are not called by us, but by JS/the DOM when certain triggers happen
+				
+				
+Section 19: jQuery
+
+19.0 What is jQuery?
+	Still widely used but def not the shiniest on the market right now
+	jQuery is helpful in reducing the number of characters typed while frontend developing
+		Example: document.querySelector("h1") --> jQuery("h1") --> $("h1");
+		nice
+	I think it is worth it to know just to get a more full understanding of frontend devving, even if I likely won't use it extensively
+	
+19.1 How to Incorporate jQuery in your website
+	Similar to BootStrap and involving it with a CDN
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		NOTE CDN Script goes AFTER content, but BEFORE your JavaScript link
+		Also smart to wrap your JavaScript code within a jQuery .ready() function. This ensures content is loaded in first
+			jQuery(or $).ready(() => { <Your JS Code Here> });
+			OR, just put the CDN at the very end lmao
+	Once connected to a JS file, you can change the style using
+		$(<selector>).css(<property>, <value>); Not bad
+	
+19.2 How Minification works to reduce file size
+	Following the URL in the browser gives a huge text vomit. This is just the jQuery library without excess spaces and comments
+	Brings the file size down
+	https://minfier.org 	Is a site that could do this to your code too
+		Holy crap, the minified version of the Drum Kit was a whole 30% smaller. 1540b -> 1113b
+
+19.3 Selecting Elements with jQuery
+	You touched on this above jQuery(<selector>) or ${<selector>)
+		selector is the css selector of the element you want
+		Important note, both these will always select ALL available elements
+	
+19.4 Manipulating sytles with jQuery
+	<element>.css(<property>, <value>);
+		Note, if only property is selected, would return the current value of the first found element
+		In other words, one parameter is a getter, two parameters are a setter
+	JS should still only be used for function though
+		In previous JS, that was a <element>.classList.add(<classname>)
+		In jQuery,		<element>.addClass(<classname>);
+			You can add multiple classnames within the ONE parameter, but seperated by spaces. 
+			.removeClass(<classname>) does what you imagine. 
+			.toggleClass(<classname>) as well
+			.hasClass(<classname>) returns a boolean on whether or not the element has the specified classname
+
+19.5 Manipulating Text with jQuery
+	$().text(<text>) 	Will allow you to change the text within the specified value
+		This is the HTML innerText() JS
+	$().html() 	If you ever want to change the innerHTML
+	
+19.6 Manipulating Attributes with jQuery
+	<element>.attr(<attribute>, <value>);
+		If you only include 1 parameter, you'll get an attribute getter
+		If you use 2, you'll make an attribute setter
+	Note that class is also an attribute and works here too
+
+19.7 Adding Event Listeners with jquery
+	<element>.click(<callback function>) 
+		Wow that is really quick and easy
+		If element has multiple elements (like querySelectorAll), it will apply the event listener to all elements
+	<element>.keydown(function (e) => console.log(e) )
+	Coding challenge. Take a keystroke from anywhere on the document and write it out on the h1
+	
+	<element>.on(<event>, <callback function>);
+		Allows some more flexibility with how you might want to handle code. Either changing event type, or adding multiple
+		
+19.8 Adding and Removing Elements with jQuery
+	<element.<before/after/prepend/append>(<html code>);
+		before and after will be well before/after the html element selected
+		prepend/append will put it just after or just before the opening and closing tags of the html element selected
+	<element>.remove()		Will... yeah you can guess lol
+	
+19.9 Website Animation with jQuery
+	Oh? We can add some common animations with jQuery? 
+	<element>.<hide/show>() will either hide or show the selected element
+		<element>.toggle() will swap between hide and show
+	<element>.<fadeOut/fadeIn/fadeToggle>()
+		Very similar to the normal in/out/toggle trio, but makes the hiding and showing more progressive instead of instant
+	<element>.<slideUp/slideDown/slideToggle>() 
+		Again, similar to the above trio, but works like a reverse window slider. Def good for dropdown menus
+	<element>.animate({
+		// Add CSS rules you want here
+		// Note, can only add CSS properties that have numeric values. Color grading is very hard as you know lol
+	});
+	Oooh very fun, you can chain the above together lmao
+	
+19.10 Angela Tip: Mixing Knowledge
+	Remember, its not about memorizing all the code in the world. It was mad useful knowing about jQuery because now it is no longer a mystery, but instead something I can search through now
+	Essentially what she's going on about, is that if you can mix different concepts learned from different modules will cause an effect that solidifies both concepts so much better.
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/6
+			Today's lesson was all about jQuery. Which is thankfully no longer some black haze mystery to me
+			Learning about normal JavaScript before jQuery was super handy, because all jQuery is, is a library that helps 
+			reduce the number of keystrokes needed to perform similar actions
+			Since jQuery is so widely used, it'll be handy to know for sure even if the majority of time you spend will be in React or something
+			TLDR
+				Instead of writing document.querySelector(<element>), you can instead use $(<element>)
+					$(<element>) will select ALL elements that match. And apply changes as spefified to all of them.
+				Installing jQuery via CDN is a good idea, since most browsers will have it auto-cached from its common use
+				Adding CSS is as easy as 
+					<element>.css(<property>, <value>);
+				Adding/Removing/Toggling Classes for CSS Styling is as easy as
+					<element>.<addClass/removeClass/toggleClass>(<classname>);
+				Adding event listeners can be done by	
+					<element>.<click/keydown>(<callback>)
+					OR
+					<element>.on(<event>, <callback>);
+				Adding/Removing elements is done through
+					<element>.<before/after>(<html code>); 	If you want the new thing before/after a specified element
+					<element>.<prepend/append>(<html code>); If you want it within the element tags, and either at start or end
+				Website Animation is done really nicely with jQuery, making commonly used CSS animations an easy to access tool
+				
+
+Section 20: Boss Challenge 2 - The Simon Game
+
+20.0 What we will make: The Simon Game	
+	Essentially, we'll build the Simon Game, where the screen will tell us to memorize a pattern then repeat it.
+	Interesting take on the game, it will only show the NEWEST button, not the culmination of all the buttons added together
+		Definitely easier than having JS try to play them back in a rhythmic order... Might be a fun todo afterwards though
+	Okay so I managed to complete the entirety of the challenge. A good chunk was done following the step-by-step, another good chunk was completed using my own brain.
+	
+20.1 Angela Tip - Dealing with Frustration
+	Take a break, it's okay to do so. A brain rest will do wonders for problem solving.
+	Literally that's it lmao
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/7
+			Today I completed the Simon game of Module 20. It was a fun experience getting to play with JavaScript and jQuery to create a working page.
+			TLDR
+				If you learned absolutely anything today, its NEVER EVER EVER use while loops in JavaScript live environments
+					It WILL be a mess to debug, and will be super annoying to play with the browser to get things working again
+				Good programming practices of writing re-usable code was a life-saver. 
+				You also fall into the habit of "Throw things together until they work" take your time to refactor afterwards
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/8
+			A bit of a self-study kind of day. I took some time to update my website with just a little bit of JavaScript
+				trying to add the copy-to-keyboard button after my email. It does work, and gives a little change animation to show
+				but the problem is in the live environment, copy-to-keyboard is blacklisted unless the site is ssl encrypted lmao
+			Add that to the to-do list
+			
+
+Section 21 The Unix Command Line 
+
+21.0 Install Git Bash on Windows
+	Bitchin! The more modern looking slides are back! The Atom modules just weren't it cheif
+	Apparently Bash comes with Mac already lol 
+	Just went ahead and installed Git Bash
+	
+21.1 Understanding the Command Line
+	Bash shell is the user interface you use to control the hardware
+	CLI stands for Command Line Interface, you know what GUI isn
+	Why use the command line? 
+		Greater control of your computer and tools
+	GUIs tend to hide configurations "If you don't know what that is, you probably shouldn't touch it" lmao
+	
+21.2 Command Line Techniques and Directory Navigation
+	Oh boy another one of these. 
+	ls 
+	cd 
+	Ah shit two new weapons to use
+		On a command line
+		ctrl+a goes to the beginning of the line (get out of here Home key and your impossible to reach button)
+		ctrl+e goes to the end (same for you End key)
+		ctrl+u deletes the entire line
+		
+21.3 The power of sleep	
+	The Angela Tip of the week. This hoe practiced surgery!?!?!?
+	Nah homie, sleep is good, but RuneScape is gooder
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 12/9
+			Again, it's a good reassurance to know my technical skills are in-fact sticking because this was just a quick refresher
+			on the basics of command line use.
+				Most useful thing to have come out was probably this e-book for whenever you wanna check it out
+				https://www.learnenough.com/command-line-tutorial
+				
+
+Section 22 Backend Web Development
+	Congradulations, you made it through the first half of the course!!!
+	Alright now the fun part, the second half focuses on backend web dev lmao get fucked Julio
+	
+22.0 Backend Web Development Explained
+	A full-stack web dev knows how to work on both the frontend and backend code
+	Basically made up of three parts
+		Server - Computer that stays on and listens/responds to incoming requests. Get you a PI!
+		Application - Logic that runs in response to a request. Often just your code.
+		Database - Used to store data. 
+	Up to this point, we've only been building Web PAGES, since all they use HTML, CSS, and JavaScript.
+		That's why github has allowed the students to store/view their web pages.
+	A good analogy used is that of a restaurant. The dining area is the frontend, kitchen taking orders is the backend
+		and the pantry with everything stored is the database
+	
+22.1 Backend Tools and Tech. - Which one to learn?
+	Frontend is fixed at HTML, CSS, and JavaScript, since they're the only ones that work with the browser
+	And the Backend...
+		Use *ANYTHING* you want lmao
+		Commonly used.
+			Ruby Rails
+			Java Spring
+			C# and ASP.net 
+			PHP - Larvel / Cake
+			Python - Django and Flask
+			...... and JavaScript - Node
+				JavaScript on the back end lets fucking go bois that's what we're learning today
+				I can hear a lot of purists SCREAMING right now
+				
+Section 23 Node JS
+
+23.0 What is Node JS - Understanding the runtime and advantages of node.js
+	Why use frameworks? Because it's mayonaise (Angela's example), but nah mostly because making everything from scratch is annoying
+		Allows us to reuse components
+	Node Js is an asynch, event-driven JavaScript Runtime. Node.js is designed to build scalable network applications.
+		Straight from Node JS, but wtf does it mean? 
+		OHHHHHHHHHH. JS used to be straight locked behind a browser, but Node let it free to be used everywhere.
+			That's why we're able to use it in places like VS Code I get it now!
+		What about the Asynch, event driven part?
+			You can initiate some part of code, and when the correct event comes along the rest of the code will happen
+	So Node is being used because it can build a server-side application. Allowing us to do use another computer instead of just the browser
+	
+23.1/2 Installing Node on Mac/Windows
+	These were just quick install lessons
+	
+23.3 Using Node - Versioning, REPL and running code using node
+	Starting off by making sure Node is installed using 'node -v'
+	REPL - Read Eval Print Loop
+		This is a computer environment where the computer reads and evaluates an input, then prints back to the user
+		Initiated with command 'node'
+		From here you enter a new "command line" interface where you can play with node using commands. .help is the first one
+		Acts like a local version of running JavaScript code from your personal computer, instead of from the browser
+	Running JavaScript Files
+		You've been doing this from the beginning lmao
+		Cool to learn that the how the node runtime exectures the JavaScript code
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/11
+			Welcome to the New Year and welcome back to the course
+			Today I finally understood what node is after years of using it and having it installed on my computer
+			I knew it ran Javascript code, but never pieced it together that JS used to just be used in the browser.
+			The REPL could be accessed after installing node using the command repl 
+			
+23.4 Native Node Modules - Leveraging Node 
+	Native modules are pre-included software for node.
+		This includes file explorer read write, and networking
+		Can read up more on native modules here: https://nodejs.org/docs/latest/api/
+	File System Module
+		This module is what we use to read/write from your local file system
+		Can either import the code, or we can make a 'require' for it
+		const fs = require("fs");
+		
+		fs.writeFile(<filename>, <message>, <callback>)
+			callback usually used for error here.
+			writeFile overwrites whatever was already in there
+	
+	Coding Challenge
+		We want to change the text within message.txt, and then console log it into the terminal
+		Wasn't too bad, the hardest part was figuring out how the node documentation was layed out
+		
+23.5 NPM - Node Package Manager - How to use NPM in your projects
+	A place that collects modules created by other developers, maintained by the github organization
+	Can be thought of as a community tool shed, where anyone can contribute and borrow.
+	We have to initialize npm in a specified folder
+		npm init 
+		This will create a package.json. This is a way of representing our data. It is a configuration file
+	To install a package - npm install <package>
+		We will use a sillyname package to learn the basics
+		npm i <pkg> will update dependencies within the package.json
+	Can almost think of it as Lego's, since you do get to use a bunch of code you don't have to write for yourself
+	ECMAScript Modules
+		Since version 12 of node, we can use ECMAScript to install node methods and modules using the familiar import command
+		Need to change the package.json to update this
+			"type": "module",
+		Then in the .js file you want to import
+			import {<method name>} from <package>;
+	Coding Challenge - Install the npm superheroes package, then console log your superhero name
+		
+24.6 QR Code Generator using NPM
+	Going to be using two packages, inquirer, and qr-images
+	Roughly three to-do's 
+	1. Inquirer to get user input
+	2. qr-image to turn into a qr images
+	3. txt file to save the user input using native fs node module
+	
+	Not bad Lopez, I managed to get a hand-jammed solution working, and cleaned it up using the provided solution code.
+	
+Section 24 - Express.js with Node.js
+
+24.0 What is Express.js - A framework on top of Node
+	Helps in creating our Backend with Javascript
+	Node is not a framework, it is a runtime environment, Express is a true framework. Interesting
+	Node is too powerful and all-encompassing, mostly used for Web Development. Could also be used for IoT and Desktop apps
+		Jack of all trades, master of none in other words
+	Express js
+		Allows us to use JS and node to create a backend. Also helps a ton in the process
+		We skipped making an app last section because it is just a lot of typing, we will build one now because it is sped up now
+	
+24.1 An Express Server - Our first one
+
+	What is the backend/server again? A server is a computer that takes and completes requests
+		Backend is the application that handles the logic, and maybe a database if it is needed
+	
+	6 steps to create an express server
+		1 Create a directory					mkdir <dir>
+		2 Create an index.js file				touch index.js
+		3 Initialise NPM						npm init -y
+		4 Install the Express package			npm i express	
+		5 Write Server application in index.js	const app = express(); app.listen(port, cb);
+		6 Start server							node index.js
+	
+	When you start writing the application with Express, gotta import express from express
+		Set a parameter to create an express() object
+		parameter.listen(<port>, <callback> () => { console.log("Server is running });
+	What is localhost? 
+		Basically making our computer our own server
+		Ports can be thought of as "doors" with their own addresses. Our servers will look and listen to these doors to respond to requests
+		There are many ports because that it has a lot of requests that it can respond to. 
+			Different services through different ports, and none interfere with each other
+			You can find what ports are open on your windows device through 		netstat -ano | findstr "LISTENING"
+		
+24.2 HTTP Requests - Learn the language that makes requests to your server
+	HTTP - Basically just the way servers communicate with each other
+	Basic Vocabulary for HTTP
+		GET - Request a resource from a server
+		POST - Sending a resource to the server
+		PUT/PATCH - Replace a resource on a server. Patch is a... well patch
+			Both are Update responses. Put completely replaces, but patches only fix part 
+		DELETE - You can figure this one on your own tbh
+	In previous section, you saw a 'Cannot GET /' error, this is because the server couldn't get the homepage
+		If you want to solve this.	app.get("/", (req, res) => {res.send("Hello World")});
+		
+		If you ever need to close a port	
+			https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36
+	To actually return something, like the homepage "/" for example.
+		app.get(<path>, (req, res) => {<code>})
+			req is the request of the computer to the server. console.log(req/req.rawHeaders) will show you details of the request
+			res is the response to the request. This would be where you put your HTML code.
+	nodemon - Instead of having to stop and start server on request.
+		nodemon index.js, instead of node index.js
+		Will have to install it globally to be able to use in future projects
+			npm i -g<lobal> nodemon
+	Endpoints - What are they? 
+		These are what go at the end of a url, for example '/' is the base root. '/contact' would be another page with contact info
+		
+24.3 Making Requests - Postman and making other HTTP requests
+	Requests are sent from client-side to the server, and the server is supposed to send responses
+	For example, the 404 error would be what the server sends back if it can't find the specified endpoint
+	Status Code 200 - The request succeeded, and the server sent the response correctly
+	Status Code 201 - The is the OK response to a POST command.
+		You could find more details on the MDN docs  	developer.mozilla.org/docs/web/http/status
+		Basically 100's Hold on. 200s Here you go. 300s Go away. 400s You fucked up. 500s I fucked up
+	POST Requests
+		Usually given from forms client-side
+	POSTMAN 	www.postman.com/downloads
+		Allows us to troubleshoot the backend without having a frontend. 
+		Allows us to send HTTP requests to specific endpoints from postman's UI
+			Can even include information in the body portion of the requests to send to the server
+	Coding Exercise
+		We're going to be testing postman out using the downloaded zip given online
+		Angela wrote code to send OK (200, 201) responses to various HTTP Requests, try and see those responses in postman
+		Postman is pretty simple to use. Might also be because it was just the first baby steps necessary.
+	package.json will come bundled with code from the source. Use `npm install` to get all the necessary dependencies
+
+24.4 Introduction to Middlewares - The man in the middle. Using body-parser together with HTML forms
+	Middlewares are something that sit in between the raw requests, work with the requests, then send them off to the app
+		Some examples of functions
+			Pre-Processing Request
+			Logging the requests that come in 
+			Authentication of the user
+			Process any errors before they get sent to the handlers
+	Body Parser 	- A commonly used middleware for express
+		Looks at the request body, before the handlers get to look at them. 
+		
+	HTML Forms
+		Often seen in stuff like user login pages. Body Parser would be used to more easily read the data
+		<form action=<HTTP Endpoint to send on submit> method=<HTTP Request>> </form>
+		<label for=<name of input>>Input Name</label>
+		<input type=<Type of input. text, button, etc> name=<label above> required<optional>>
+			These above two come in a pair, one is just the label, while the other is the actual HTML form
+			input's name would be the key in the key-value pair of the request body
+	Coding exercise	- We're going to try to render index.html as the thing the server returns
+		res.sendFile(<FULL path>)
+		Getting the full path sometimes takes some work, here are some lines of code that will help
+			import { dirname } from "path";
+			import {fileURLToPath } from "url";
+			const __dirname = dirname(fileURLToPath(import.meta.url));
+				These three lines will help dynamically set the full path. Whether it's on your local machine, or on cloud server
+		We're going to use body-parser to parse the index.html page
+			When form is filled, will send info to /submit in a POST
+			Need a route handler to take care of request
+			Using body-parser, we will parse the info, and add the data to the request.
+			index1.js is the starting point, follow instructions online to 
+		I'm going to agree with the comments today. We got like NO help from Angela on what body-parser is, and were just told to go nuts
+			app.use(bodyParser.urlencoded({extended:true})) is what allows us to actually see the body, interesting lol 
+			FUCK this was the perfect time to use postman on my own lmao
+			
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/20
+			I swear I have been working through the modules, but it has been slow going bc of Leagues. 
+				Great news though, Dragon cup achieved! Anyways I'll be more thorough with my notes and details again
+			HTTP requests are the basics of a server-client relationship. Client sends requests, servers send responses
+				Most commonly used requests are GET, PUT, POST, DELETE
+				Requests are sent to Endpoints, which are essentially just other "webpages". Similar to prev seen '/contact' pages
+			Express.js is the most commonly used framework used to handle these kinds of requests
+				Can get it started by npm i express, and importing it into our app
+				Then adding const app = express();	app.listen(port, () => {<JS Code>}); app.get("/", (req, res) => {<JS Code>})
+					We can get an app that has a simple home landing page
+					node/nodemon index.js 		To actually start server. nodemon is the same as node, just auto-restarts
+			POSTMAN is a service we can use to send HTTP Requests without actually having any frontend developed. 
+				Very handy in checking our app works as intended
+				Can send GETs, POSTs, etc. Posts can have body elements as well
+			Middlewares and BodyParser
+				Middlewares are essentially software that sits between raw HTTP requests and your app, and get to handle the data first before sending it off to the app's endpoints
+				Bodyparser is the main one shown, but not entirely as widely used anymore, now that express has it's own
+					app.use(<bodyParser/express>.urlencoded({ extended: true }));
+					Either-or works, bodyParser will require a download tho
+				In the future, make sure to use the two imports and the __dirname to always get fullpath
+				
+Section 24.5 Custom Middlewares - How to use logging middleware as well as how to create your own
+	The 4 main middlewares are Pre-processing, Authentication, Logging, and Error Handling
+	Logging - Commonly used by npm package Morgan
+		Logs requests to your server. 
+	Coding challenge, look through the morgan documentation, and decide one you want to use, and apply it to the 3.4 zip
+		app.use(<middleware>) Here is where you add middleware to your express code
+	Writing your own middleware 
+		app.use((<req>, <res>, <next>) => {});
+			Uses the request, the response, and the 'next' command to tell express when to move onto the next middleware
+			next() is just as easy as writing, well next()
+			Next is very important, without it, the request will NEVER go through
+		Was even able to create a custom function customMiddleware(req, res, next) that we could just pass into the app.use()
+	Coding Challenge
+		Using everything we learned, update index4.js to create the bandname generator by yourself. 
+		Wasn't too bad, even wrote some snippets to help with future express. Namely...
+			fullpath: Adds the 2 imports and const __dirname lines
+			ebp: Adds the app.use() express body parser
+		
+
+Section 24.6 Secret Access Project - Combine all the knowledge you learned from express to create a website of secrets
+	Running node solution.js, we see a form asking for a password, and it should display a page when accessed correctly
+	Wait, I was able to do it without an awful amount of frustration! Well done!
+		I got the chance to use both fullpath and ebp from the previous section lol
+		I quickly created the base listen and get / request and returned the index.html
+		Then I created the checkPassword middleware. It just checks for the password, and if it is correct
+		it will send the file for secret.html, otherwise will send the index.html
+		
+Section 24.7 Angela Tip - How to Solidify your knowledge
+	Her advice is to teach. Teaching is the best way to learn.
+		If anything, it will show you what gaps you have, or if you really have the knowledge solidified
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/20
+			Asked and received, now without RuneScape Leagues as a major distraction I was able to fully focused
+			TLDR
+				Middlewares are used for logging, authentication, parsing, and error handling
+				Middlewares are added to express via the app.use(<middleware function>) command
+					This includes both middlewares from npm, or custom built middleware
+				If you want to create a custom middleware
+					var functionName = function(req, res, next) { <JS Code> next() };
+					If you do not put the next at the end, requests will never get processed
+			Tomorrow
+				I will go through the EJS model and would like to complete through Section 3, about 58 minutes of video
+				
+Section 25 - Embedded Javascript (EJS)
+
+25.0 What is EJS? - Learning to use EJS
+	Last section we saw how we can use forms to recieve information from the user.
+	Embedded JavaScript (EJS) will allow us to take that input, and input it into HTML of the page
+	Templating - Sending request data into an html file
+		Return of Seperation of Concern, JavaScript should focus on the functionality, as well as the frontend/backend
+	Templating Languages, for JavaScript we get to use EJS
+		A file that ends with the .ejs file extension. Allows us to run simple bits of JavaScript to create html
+		res.sendFile() is ONLY for static pages, cannot use ejs here
+		res.render(<ejs file>, {<key> : <value>});
+	EJS in VS Code
+		EJS Language Support Extension
+	Coding Exercise - Create a site from scratch using express, html, js, and ejs
+		Okay, the same issue from the intro to express happened, we were told EJS exists, and told to go crazy
+		And oh boy... EJS is fucking nasty. Essentially everything gets wrapped around <% %>, I'm pretty sure my fingers have 
+		never touched those keys before in my life. 
+		All parameters are received via the res.render(<file path>, {<keys> : <value> });
+			And are then used in the .ejs file using their key names. We can pass a named object, just remember to use ONLY key name
+		.ejs files tend to go in the ./views/ directory, and res.render(<path>) will default to looking in here for that
+		
+25.1 EJS Tags and Syntax
+	Common EJS Tags
+		<%= <variable> %>	Whatever goes in here will execute the JavaScript, but will render whatever the JS outputs
+		<% <JS Execute> %>	Will just be interpreted as JS, but not output anything
+		<%- <HTML> %>		Render the output as HTML
+		<%% <Escape> %%>	Will 'escape' the current EJS. So a comment?
+		<%# <Comment> %> 	Nope, this is a comment. Above is more for "teaching EJS"
+		<%- include(<file.ejs>) %> 	Inserts an entire ejs file in the EJS
+	Coding Challenge - Take a data object from a pre-written app.js
+		Modify index.js to read the title and current seconds	
+			If seconds are odd, do not show any items
+			Else show the items 
+		Also pull in the full footer.ejs
+
+25.2 Passing Data to EJS Templates - Passing data from Client to Server and back
+	Already have seen passing data from server to EJS in the form of res.render(<ejs file>, <optional, any data>)
+	EJS does not scope it's parameters, so you cannot error handle within the ejs file in the traditional way
+		You can get around this by using locals.<parameter> 	If parameter doesn't exist here, we CAN use error handling
+	What about EJS to the Server? Like in a form
+		Same as base HTML, use a form and a post request, then use req.body to read the data
+	Coding Challenge
+		Take a pre-written basic express app and link it to a form with ejs
+		The form will take a first name and last name. When submitted, have index.ejs display how many letters are in the full name
+		
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/22
+			I completed the goal set yesterday and completed the first three EJS modules. I am not impressed by it
+			TLDR
+				EJS is a Templating Language that combines html and js into an unholy amalgamation
+				We can use this with express to send data to an ejs file and can have ejs render it dynamically
+					res.render(<ejs file>, <json object>) MUST be used to send this data. res.sendFile() is only for static files
+					<ejs file> by default looks within the home direcory's view directory. 
+						Do not need to specify full path bc of this
+					<json object> can be passed anonymously or named, but either way ejs will read parameters by key name
+				EJS Syntax is a little weird, everything JS is wrapped around <% %> tags
+					Different tags have different behaviors
+							<%= <variable> %>	Executes JS and renders the output
+							<% <JS Execute> %>	Executes JS but renders no output (used in for's and if's and whatnot)
+							<%- <HTML> %>		Render the output as HTML
+							<%% <Escape> %%>	Will 'escape' the current EJS. Will rarely use this
+							<%- include("<ejs file>") %> 	Render a whole EJS file here. Again, looks within view directory
+				Passing data to server -> client -> server
+					Very similar to how clients passed server data in express, a post request with some data
+					Sending data back to client however you have a few more options
+						If you don't send back data, but ejs is expecting something, page will crash
+						EJS does not scope out parameters, it will use immediately. Thus traditional error checks don't work
+						To get around this, if(locals.<parameter name>). 
+							Locals will scope out first, thus preventing crashes if no data is passed
+			
+			Tomorrow - Finish the EJS course, and get the templates set up for the upcoming capstone project
+				Karla will also want to re-check her website this weekend. Re-look over bootstrap and into https.
+				
+25.3 EJS Partials and Layouts - Reusing EJS Code
+	How would we add CSS into the EJS that we've been working on? 
+	We can't add stylesheets to the Head tags in an EJS. These files are being created dynamically 
+	Statics files tend to be stored in the 'public' directory
+		Then app.use(express.static("public"));	Will treat everything in here as a static file
+		Then the href links for css have to point relative to the directory given above ^
+		EJS needs to know why the pages are static because they do not need to be generated, like an ejs file needs to be 
+	If we're going to reuse sections like Headers and footers, we can create an EJS templates. AKA Partials
+		<%- include("<file.html>") %>	Can include an entire html component in just a line of code
+	Coding Challenge - Fix a broken express/ejs app's styling using partials
+		Starting off with a site that looks nice in the homepage, but awful in other tags
+		Gotta fix the index.ejs and index.js to correctly render the rest of the pages.
+			All ejs files are included, but will have to add the css rules to contact and about pages
+		Interesting, because the header.ejs partial includes all of the CSS rules, including them in the main ejs files pulls it in too.
+		Wasn't too bad, it was mainly just adding the routes to the index.js. Adding the special app.use(), and importing partials
+		
+25.4 Final Project - Band Generator Project - Creating a Dynamic Website using EJS
+	We're going to be makign a souped up band-name generator
+	We'll have it styled and everything.
+	Goal: A generate band name button, that will pick two names at random from a list
+		I never want to code with EJS partials again. The header, combined with my auto-prettifier, was adding a </main> </body>
+			tag. The logic is that the header opens these, and footer closes them. Fucking disgusting.
+			It kept making the submit button not work until I figured it out. I also fucked up the link to main.css
+			But that's on me
+	
+25.5 Tip from Angela - Location Location Location
+	Learning comes from practice. Watching a video is only just the intro, the doing is the actual learning
+	Dunning Kreuger Effect - At the start of learning, you'll feel like a pro, but as you learn more, you realize theres so much
+		You fall into the pit of despair, and feel like you know nothing. Both of these are over-exagerrations. You have a lot to 
+		learn, but still know so much.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/23
+			I completed the module for EJS and never wanna look at it again.
+			TLDR
+				Including CSS in EJS
+					app.use(express.static(<static files directory>))
+				Partials are pieces of EJS code that can be injested into other sites using the command	
+					<%- include("<file.ejs>") %> 
+				Be very careful with Prettifier and EJS partials
+					One partial might have part of a tag (like header opening), and another will have the other (footer closing)
+					Prettifier will auto-add these tags, making some weird behavior.
+			Tomorrow
+				Oh god tomorrow is on version control. Git and all that. 
+					Time to add some git commits I guess, it's been too long I'm nervous to break the streak
+					Commit something tomorrow, you'll only get more nervous the more you wait
+				Rewatch the bootstrap videos again to prepare for Karla
+
+Section 26 - Web Blog Capstone 
+	Use Express, NPM, and EJS to create your own web blog.
+	The blog should have the following features.
+		- At least one of each, js node file, EJS file for structure, and CSS file for sytling
+		- Users should be able to create a post
+		- Home page should be able to view all posts
+		- Each post can be edited or deleted
+		- Good styling, we're not in 1990 anymore after all
+	Rough breakdown suggested by course
+		Hour 0: Planning. Get your goals, design, and mockups created
+			Planning Complete: Mockup can be seen at - https://lopez-design-projects.my.canva.site/personal-blog-mockup
+			Color Scheme: https://colorhunt.co/palette/faf7f0d8d2c2b174574a4947
+		Hour 1: Setup. Create the project repository, initialize the node application, and directory structure
+			Yeah this part didn't take too much, just a couple mkdir and touch commands
+		Hours 2/3: Implement post creation. Implement post viewing. Implement post edit. Implement post delete. Test App
+			I messed up, I was adding the styling at this point and it's been eating a ton of my time
+			Fortunately, the base design is now in-place. 
+		Hours 4/5: Style and Polish. Create the CSS and link to the HTML. Test the app on various browsers
+		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/24, and 1/26
+			This is going to be a bit of a different style of completed lesson review. 
+			Since this capstone has to be multiple hours long, it's going to span multiple days. 
+			Therefore, all notes will be written above, with completed lessons consolidated for the entire duration
+			Log 1/24
+				Booted up Canva again and created a simple mock up using a warm/brown color scheme. 
+				Wrote out the Capstone objectives, goals to be completed, and added them all to the style of the page.
+			Log 1/25
+				Didn't have a whole bunch added to the project. Mainly created the boilerplate express server, ejs, and css
+				Got the general look and feel to a temporary blogpost. Doesn't look too bad. 
+				Leetcode took up the rest of my time
+			Log 1/26
+				Got nearly all the CSS figured out for the homepage looking like the mockup from canva
+				Also got the express server and EJS page to automatically display all the blogs 
+				Next up would be a way to add a blog... thinking about it idk where I would even put the "Add a blog" button
+					Maybe in the header? 
+			Log 1/28
+				It's over, it's fucking done. It doesn't have a fancy footer but I'm done with this project for now
+				I got the Add Blog function and page all working
+				The Add Blog page also doubles as the Edit blog page
+				Edit and Delete buttons were added to all blogs
+				Edit page auto-populates the form
+				Delete button maintains post order
+				I'm so fucking glad I was able to complete it. There is still some jank but I'm glad the base structure is in place

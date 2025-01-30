@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %>
+    <%- include("partials/header") %>
+    <body>
+        <!-- Main Form used to create and edit a blog -->
+        <form class="form_container" action=<%= (locals.title) ? "/saveblog" : "/createblog" %> method="POST">            
+            <textarea class="form_title" name="title" placeholder="Title" required><%= (locals.title) ? title : "" %></textarea>
+            <textarea class="form_content" name="content" placeholder="Content" required><%= (locals.content) ? content : "" %></textarea>
+            <% if (locals.id) { %>
+                <input hidden name="id" value=<%= id %> > 
+            <% } %>
+            <div class="button_container">
+                <button class="button secondary"><a href="/">Cancel</a></button>
+                <button class="button primary">Submit</button>
+            </div>
+            
+        </form>
+    </body>
+</html>

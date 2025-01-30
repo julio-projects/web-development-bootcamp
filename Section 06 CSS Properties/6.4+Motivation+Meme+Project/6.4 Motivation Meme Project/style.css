@@ -1,0 +1,25 @@
+/* 2. The text should be white and background black. */
+/* 4. The text should be center aligned. */
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+div {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#title {
+    text-transform: uppercase;
+    font-family: "Libre Baskerville";
+}
+
+img {
+    width: 100%;
+    border: 1px solid white;
+    padding: 2px;
+    margin-left: -3px;
+}

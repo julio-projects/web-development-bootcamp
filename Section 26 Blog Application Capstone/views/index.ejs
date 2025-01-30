@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/head") %>
+<%- include("partials/header") %>
+
+    <body>
+        <div class="blogpost_container">
+            <% if(locals.blogs.length > 1) { %> <% for (let i=0; i<blogs.length; i++) { %>
+            <div class="blog">
+                <h2 class="blog_title"><%= blogs[i].title %></h2>
+                <p class="blog_content"><%= blogs[i].content %></p>
+                <div class="button_container">
+                    <form action="/editblog" method="POST">
+                        <button class="button secondary" name="id" value=<%= String(blogs[i].id) %> >Edit
+                        </button>
+                    </form>
+                    <form action="/deleteblog" method="POST">
+                        <button class="button primary" name="id" value=<%= String(blogs[i].id) %>>Delete</button>
+                    </form>
+                    
+                </div>
+                <% if (i !== blogs.length-1) {  %>
+                    <hr class="blog_seperator" />
+                <% } %> 
+            </div>
+            <% }; } else { %>
+            <h2>No blogs to display</h2>
+            <% } %>
+        </div>
+        <!--script> 
+
+            document.querySelector("#toggle").addEventListener("click", () => {
+                document.querySelectorAll("*").forEach((e) => {
+                    e.classList.toggle("red-border");
+                });
+            });
+        </script-->
+    </body>
+</html>
