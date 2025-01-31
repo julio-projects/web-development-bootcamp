@@ -2119,3 +2119,30 @@ Section 26 - Web Blog Capstone
 				Edit page auto-populates the form
 				Delete button maintains post order
 				I'm so fucking glad I was able to complete it. There is still some jank but I'm glad the base structure is in place
+				
+Section 27 - Git, GitHub, and Version Control
+
+27.0 Introduction to Version Control and Git
+	Version control is the act of storing versions of your code, and updating versions as you go
+	
+27.1 Version Control Using Git and the Command Line
+	git init 		Command to initialize a git repo
+		Creates a .git file in your directory
+	git add			Adds files to the Staging area
+	git status		Shows the... well status of all the files in the directory
+	git commit -m "<message>"		Quick title descibing the change you're making
+		Good practice is to make the message "present tense"
+	git log			Shows all the versions and their details
+	git diff <filename(s)>		Shows the changes made to the file(s) from the last commit
+	git checkout <filename>		When given a filename, will revert changes to the files specified
+
+27.2 Git Remote Repositories
+	So far the only thing Angela has mentioned is creating a GitHub account, but a visual she has inspired something in me	
+		Why don't I do a Hackathon? I think it would be a great time and I will learn on the fly for once
+		If not, I think I have the skills to pick up a new project, something to start populating the GitHub with
+	git remote add <name> <url>			
+		<name> tends to just be origin, I don't think I've ever seen it anything different. I didn't know it was configurable lol
+		<url> Remote repository on github
+	git push -u origin main
+		Pushes changes to the remote repository to the main branch. 
+		-u links up the remote and local repositories.
