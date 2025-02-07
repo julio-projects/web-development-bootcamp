@@ -2146,3 +2146,146 @@ Section 27 - Git, GitHub, and Version Control
 	git push -u origin main
 		Pushes changes to the remote repository to the main branch. 
 		-u links up the remote and local repositories.
+	From GitHub online. Insights > Network will show all the branches of the code from creation to present
+		Oh intresting, people have used GitHub for keeping track of their actual book stories. 
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/30
+				Forgot to update completed lessons for 1/29, but not much learning was done, instead I broke a glass ceiling
+				I pushed to GitHub for the first time in... a long time. The paralysis has officially been broken
+				TLDR
+					Git and GitHub are a technology used for version control, allowing us to make and track changes to files
+					Thankfully I have a good grasp at Git and was able to follow along for this short lesson today.
+				Tomorrow
+					Finish the lesson on GitHub
+					Start work on Karla's Project
+					
+27.3 Gitignore
+	A file that tells git which files not to track
+	Can take filenames, directories, wildcard *'s, and a mix of those as well
+	Common ignored files/directories
+		/node_modules, DS_Store's, API keys
+	Git is a hero, here are some commonly used .gitignores
+		https://github.com/github/gitignore
+		
+27.4 Git Clone -- How to download and create a copy of a repository
+	git clone <url> 		Will pull in all of the code from the given url, usually github
+		Some fun repos include
+			The original Quake 3 running in the browser
+			Or a dev-made wordle
+	A big part of programming is working off someone else's code, spend next weekend developing on something open source
+		https://github.com/MunGell/awesome-for-beginners
+
+27.5 Branching and Merging
+	Used for feature development. Branches break away from the 'main' (get it) trunk, to begin making changes
+		If all changes go as expected, you can then merge the branch back into the main 
+	git branch <optional - branchname> 	With the parameter, creates the branchname specified. Without, shows all branches
+		git checkout <branchname> to actually change into that branch
+	git merge <branchname> 	Merge the changes from the specified branch into the current branch
+	
+27.6 Optional Git Challenge
+	Alright Mr. Wise Guy, lets see how well you really know git
+		https://learngitbranching.js.org/
+		Got through the introduction just fine, and even learned about rebasing! 
+
+27.7 Forking and Pull Requests - How to suggest code changes and contribute to an open source project
+	A fork is giving you full ownership of a copy of a GitHub repository
+		Different from Git clone because a clone just copies it locally
+		Forking gives you more power in the repository to make changes
+	Pull Requests are then sent to the original repository to ask to make suggestions on the code
+		If the owner likes the changes, she can accept the request into the original repo
+	
+27.8 Angela Advice - Spaced Repitition
+	Essentially, she is saying to go back and review previous course contents to solidify your understanding
+	
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 1/31
+				Finished the Github lesson
+				TLDR
+					Git Rebasing is adding all the old commits from a branched off version, and adding them commit-by-commit to other branch
+					Learn how to contribute to open source, you'll become a better programmer for it.
+				Tomorrow
+					Finish the lesson on GitHub
+					Start work on Karla's Project
+					
+					
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 2/3
+				Please excuse the weekend of no updates. It was kinda tough to even bring myself to begin working on Karla's site, let alone update this text document.
+				TLDR
+					I got the navbar looking crisp and clean. I also sent my first indeed job application
+				Tomorrow
+					Work more on the homepage for Karla's site. 
+					Work through Angela's course some more.
+
+Section 28 Application Programming Interfaces (APIs)
+
+28.0 Introduction to APIs
+	A set of protocols that define how programs can interact with each other
+		If we want two different applications to communicate, we'll need some sort of interface to allow software to interact
+	Applications can create an API that allows users to interact in some way with their code, and return you a structured output.
+		Can think of it as a GET request. The server side will tell you how to create these requests and the output's structure.
+	Different types of APIs: GraphQL, SOAP, REST:API, gRPC
+		Angela's advice: Learn in the moment, when you need it. Learn the tech WHEN IT'S NEEDED
+	REST API's
+		Using the HTTP Protocol to interact with the API
+		Coding example - Use POSTMan to interact with an API
+		
+28.1 Formatting API Requests 
+	Up until now, we have built frontend ui's and backend servers, talking via requests.
+		This is basically just a private API
+		If we want to communicate with someone else's server, we'd need to use a public API
+	Using a "public" api. We were supposed to run all this via the bored-api.appbrewery.com api, but currently it is down
+		Workaround was to git clone all the files from github, and run it locally
+	API Endpoints
+		<baseurl>/<endpoint>		endpoints are different routes on what a server can handle.
+		In the case of the bored-api http://localhost:4000/random	'random' is the endpoint and will return a json with a random activity
+	Query Parameters
+		<baseurl>/<endpoint>?<query1>=<value1>&<query2>=<value2>		Essentially like setting a POST request with key/val pair
+		localhost:4000/filter?type=social&participants=2		Will return all activities with specified key/vals
+	Path Parameters
+		After an endpoint, we can add some parameter that can identify some resource in the api
+		<baseurl>/<endpoint>/<path parameter>		These are specifically used for getting a resource
+		localhost:4000/activity/5914292				Will always return "Hosting a movie marathon"
+		
+28.2 What is JSON?
+	JavaScript Object Notation - A way to format data in a human readable way to transfer across the internet
+	OOHHHHHHH JSON and JS objects DO have a difference. Object keys DON'T have to use strings around their keys, JSONs do
+	JSON tends to be minified so it can be in a 'flatpack' notation
+		https://jsonviewer.stack.hu		Website that you can use to prettify your JSON
+	Serialization - Turning a JavaScript Object into a JSON
+		const jsonData = JSON.stringify(<JS Object>);	Method in the JSON library that turns objects into JSON
+		const data = JSON.parse(<JSON>);				Method to turn JSON back into a JS Object
+	Coding Challenge - Take a JSON with recipes and create a website that shows all the necessary ingredients to create the food
+		Most of the express and html has been built out, you'll just have to complete the recipe endpoint for each of the tacos
+		Side note: https://pattern.monster is a good site for creating fun, stylish backgrounds for your websites
+		Wasn't too bad, was a lot of repeat work from what I worked on with the Capstone. 
+			That capstone did wind up being such a great teacher, mercifully, time spent does wind up teaching so much
+	
+28.3 Making Server-Side API Requests with Axios
+	What if we want an app to create an API request? 
+		Whoa, Angela showed some native node code to make an https request and it looks G N A R L Y
+		Includes creating an object with hostname, endpoint, and request method
+		You send it with https.request(<object>)
+		Add all the data chunks to the end of the data
+		When all the values are received, you can finally use the data
+		On a fail, show an error. 
+		request.end();
+	Axios - Making https requests much easier using a third party library
+		Asynchronous, so you have to use either an await, or a .then().
+		Axios automatically turns https response into a JS object. 
+		Making the request is just a one line thing now
+	Coding Exercise - Use the bored-api to auto make a request for you
+		Had a few hurdles to overcome, first was that the bored-api is still not working lol
+			Was able to start another version of it on localhost:4000, and then was able to send api's that way
+		Axios requests are broken down into essentially the following:
+			app.get(<endpoint, async (req ,res) => {						// Note the async, very important when working with APIs
+			try {
+				const response = await axios.<method>(<url>/<endpoint>)		// Note the await is important
+				const result = response.data								// Already comes in JS object format. Ready to use
+				res.render(<filename>, { data: result });					// Mission successful
+			} catch (error) {
+				//Mission Failed
+				console.log(error.message)
+				res.render(<filename>, {error: error.message });
+			}
+			});
+			Writing this here because Angela didn't go over it at all with an example previously lol
