@@ -1,0 +1,142 @@
+/***************************
+Globals
+***************************/
+
+/**
+Main Style Colors
+Deep Blue: #190482
+Bright Purple: #7752FE
+Lavendar: #8E8FFA
+Light blue: #C2D9FF
+*/
+
+html {
+    background-color: #190482;
+    color: #c2d9ff;
+    font-size: 28px;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/***************************
+Picture Container
+***************************/
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.picture-title {
+    margin-bottom: 0;
+}
+
+.picture-apod {
+    border: 4px solid #7752fe;
+}
+
+.picture-container > * {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-add-date {
+    display: flex;
+    align-items: flex-start;
+}
+
+.picture-increment {
+    width: 2rem;
+    height: 1.5rem;
+    background-color: #190482;
+    border: 0;
+    color: #c2d9ff;
+    font-weight: 1000;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/***************************
+Explanation
+***************************/
+
+.explanation > * {
+    width: 80%;
+    display: flex;
+    color: #c2d9ff;
+}
+
+/***************************
+Form
+***************************/
+
+.form-create {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-title {
+    margin-bottom: 0;
+}
+
+.form-text {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-label {
+    width: 3rem;
+}
+
+.form-input {
+    width: 3rem;
+    background-color: #c2d9ff;
+    color: #190482;
+    border: 0;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.submit-button {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: #190482;
+    border: 3px solid #7752fe;
+    border-radius: 2rem;
+    color: #c2d9ff;
+    font-weight: 600;
+    font-size: 0.5rem;
+}
+
+/***************************
+Footer
+***************************/
+footer {
+    background-color: #8e8ffa;
+    margin-top: 3rem;
+}
+
+footer.container > p {
+    width: 80%;
+    font-size: 0.75rem;
+    margin: 1rem 0;
+}
+
+.red-border {
+    border: 0.5px dashed red;
+}

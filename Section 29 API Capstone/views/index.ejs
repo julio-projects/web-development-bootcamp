@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <title>NASA APOD</title>
+    </head>
+    <body>
+        <div class="picture-container">
+            <h1 class="picture-title">NASA Astronomy Picture of the Day</h1> 
+            <% if (locals.date) { %>
+            <div class="picture-date">
+                <h2> 
+                    <form class="form-add-date" method="get">
+                        <label for="submit"></label>
+                        <input id="yesterday" class="picture-increment" type="submit" value="←" formaction="/yesterday">
+                        <%= `${date.month} ${date.day}, ${date.year}` %> 
+                        <input id="tomorrow" class="picture-increment" type="submit" value="→" formaction="/tomorrow">
+                    </form>
+                </h2>
+            </div>
+            <% } %> 
+            <% if (locals.data.media_type && data.media_type === "image") { %>
+            <img class="picture-apod" src=<%= data.url %> alt="nasa-apod" />
+            <% } else { %> 
+            <h3>Today's APOD is not an image, please visit  official page to view</h3>
+            <% } %>
+        </div>
+        <div class="explanation container">
+            <h3 class="explanation-title">Explanation</h3>
+            <p class="explanation-info">
+                <% if (locals.data.explanation) { %>
+                    <%= data.explanation %>
+                <% } %> 
+            </p>
+            <% if (locals.link) { %>
+                <a href=<%= link %> ><h3>NASA's Official Page</h3></a>
+            <% } %> 
+        </div>
+        <div class="container form">
+            <form id="form-date" class="form-create" method="post">
+                <h3 class="form-title">Select a Date</h3>
+                <div class="form-text">
+                    <label class="form-label" for="idMonth">Month</label>
+                    <input class="form-input" type="number" id="idMonth" name="month" min="1" max="12" 
+                    value=<%= (locals.data.date) ? Number(locals.data.date.substring(5,7)) : ""%>>
+                </div>
+                
+                <div class="form-text">
+                    <label class="form-label" for="idDay">Day</label>
+                    <input class="form-input" type="number" id="idDay" name="day" min="1" max="31"
+                    value=<%= (locals.date) ? Number(date.day) : ""%>>
+                </div>
+                <div class="form-text">
+                    <label class="form-label" for="idYear">Year</label>
+                    <input class="form-input" type="number" id="idYear" name="year" min="1995" max="2025"
+                    value=<%= (locals.date) ? Number(date.year) : ""%>>
+                </div>
+
+                <label for="submit"></label>
+                <input id="submitForm" class="submit-button" type="submit" value="Submit" formaction="/request-date">
+              </form>
+
+              <form class="form-create" method="get">
+                <h3 class="form-title">Random Date</h3>
+
+                <label for="submit"></label>
+                <input id="randomSubmit" class="submit-button" type="submit" value="Submit" formaction="/random-date">
+              </form>
+        </div>
+        <footer class="container footer">
+            <p>© Julio Lopez 2025</p>
+        </footer>
+        <button id="toggle" style="position: fixed; left: 0; top: 0">
+            Toggle
+        </button>
+        <script>
+            document.querySelector("#toggle").addEventListener("click", () => {
+                document.querySelectorAll("*").forEach((e) => {
+                    e.classList.toggle("red-border");
+                });
+            });
+        </script>
+    </body>
+</html>

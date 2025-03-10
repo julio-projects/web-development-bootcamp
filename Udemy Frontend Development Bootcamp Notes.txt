@@ -2289,3 +2289,318 @@ Section 28 Application Programming Interfaces (APIs)
 			}
 			});
 			Writing this here because Angela didn't go over it at all with an example previously lol
+			
+28.4 API Authentication 
+	What to do in a scenario where you don't want everyone to access the API and it's data
+	Authentication is used to protect the data within an api from bad interest persons
+	4 tiers of Authentication
+		0: No authentication
+			Think of the bored-api. Everyone and they mama can make API requests
+			But unlimited access is also not good, so even this had a 100 requests per 15 minutes limit 
+		1: Basic authentication
+			Providing a username and password when making an API request
+			Usually done with something called base64 Encoding added to an api request header.
+			Going to try this with the secrets api		https://secrets-api.appbrewery.com/
+				secrets-api has a POST method to register as a user.
+					user: GonnaSayIt	pw: h8tergonnah8
+				Can now use this with postman's Autorization tab > Basic Auth to send requests that require basic auth
+					Can use Headers tab to view this header 
+			Note, Base64 is easily decryptable, ONLY USE IF HTTPS IS ENABLED
+		2: API Key Authorization
+			Authentication: User proves who they are. Authorization: Client gives permission based on user
+			A lot of APIs will use an API key. Makes it super easy to track how many requests that key is using
+			Using the Secrets API
+				api-key: 2a677597-27b5-43b5-8e0d-3c832f31bfce
+				Okay to send this, had to use the Params tab, not the Body Tab
+					Params is for values directly put into the url
+					Body is for values sent as the JSON in a POST request
+		3: Token-Based Authenctication
+			Once a user logs in with a password, they get a token that then handles the Authorization
+				Industry standard is to use Oauth
+				You have used this before when a website asks to "Log in with Google?"
+			secrets-api example
+				token: be320faa-3164-41cd-8db7-4e595b744897
+	Coding Challenge - Use all the above in a pre-made app 
+	
+28.5 REST APIs 
+	We used Axios to make get requests in a try/catch block
+	Difference between chaining (.get().then()) vs an async
+		Chaining will wait for methods to finish before continuing
+		Async is more modern, we mark functions as async, then mark lines with await when we need their result
+	What about the rest of the methods? 
+	GET
+		axios.get(<url>, <config>);		Config we used in the authentication lecture to fill in username/passwords/tokens etc
+	POST
+		axios.post(<url>, <data/body>, <config>);	Note the second parameter, the JSON sent from the HTTP request.
+		data is the axios preferred second param name, Angela prefers body
+	PUT
+		Remember, PUT methods completely replace some data point, looks the same as the POST request.
+		axios.put(<url>, <data/body>, <config>);
+	PATCH
+		Will also look similar to POST/PUT
+		axios.patch(<url>, <data/body>, <config>);
+	DELETE
+		axios.delete(<url>, <config>);		Note the use of only two parameters. 
+	
+	Coding exercise - Use secrets-api to configure routes for each of the 5 above methods
+		Today I learned you can add a method and value directly to a button, 
+			<input id='' type="submit value=<method> formaction=<"endpoint">>
+		Wasn't too bad, I got some axios practice using the try/catch blocks and thankfully didn't run into any server-side issues
+		There is just a lot you have to juggle when moving data around I am seeing this now
+	
+28.6 Secrets Project 
+	Going to build a whisper-like app that allows people to anonymously send in secrets
+	Going to be using a lot of the tech we've previosly used. NPM, Express, Axios
+	Oh... we're creating it from scratch clientside, at least frontend UI has already been made for us
+		Okay, we'll only have to hit up the /random/ endpoint, so we'll only be working with ONE secret at a time.
+		We also have a ton of hints we can use... but I'm going to see if we can build everything without it
+	Was pretty straightforward, although there are a few things to come clean on
+		Yes I got it working with little actual trouble, BUT it was because of the backlog of EJS/Express I've completed up to 
+		this point, it was simple to look back on old examples to complete each piece of the site.
+		Stuff like the imports, creating the app, the public folder, and syntax for app.listen() were floating around in my head
+		But I did have to look them up to create, and idk if that's cheating or not.
+		
+28.7 Angela Tip - Use Accountability in your Favour
+	When the only person that knows your goal is you, you may get discouraged
+	When more people know of the accountability, you're more motivated to get something done
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Completed Lessons for 2/11
+				Wow it has been another week. I have been at work on both Karla's site and the API lesson, but was tough to
+				go through more than one at a time, these were some monster-length lessons
+				TLDR
+					Completed the API Section
+					Learned how to use Axios to send HTTP requests to APIs, as well as how to handle the async nature of them
+					Got the entire first page of Karla's site looking well
+				Tomorrow
+					Start work on the Capstone API, and as hard as it will be, I want daily updates.
+					
+Section 29 - Use a public API Capstone
+	After a bit of tinkering and thinking, I think I want to redesign NASA's Astronomy Pic of the Day but with a working calendar that allows for picking which picture to feature.
+	
+	Nasa documentation found here: https://api.nasa.gov/
+		I wouldn't make it too complicated, use Fireship's UI finder: mobbin
+			Maybe not since it requires a paid tier
+		Either way, have a way to select calendar dates 
+			Maybe use JavaScript npms to handle dates?
+		On submission, show NASA's APOD for that day
+			Allow submissions for next pic and previous pic
+		As a bonus, add a 'random' button that takes advantage of the API's 'count' function
+		
+	02/13
+		Huge progress today, I got the basic design completed
+			https://lopez-design-projects.my.canva.site/nasa-api-project
+		I also got a quick working prototype up and running
+			So far, it only gets the current APOD, but will implement the form tomorrow
+			
+	02/14
+		I completed the project to what I was hoping to accomplish
+		The remaining style of the site was completed
+		The form for taking in user input's for a new day is complete
+			Inputs are auto-populated for the current day
+			Some rudimentary date-checking has been added
+		Random Date button was completed
+			Big copy-paste moment from yesterday lol
+		State is being maintained in the app itself
+			So we're good as long as there aren't two or more users on at once lmao
+			Handles current date, and also builds out NASA's official site
+		Buttons for yesterday and tomorrow are working
+			I used npm's date-fns library to handle this for me, since I didn't want to worry about edge cases for days
+			Fucking lifesaver if I'm honest with myself
+		Error handles invalid dates to default to current day
+		
+Section 30 - Build your own API
+
+30.1 - Building your own API
+	API's, as we already learned, are great because they allow us to leverage other people's data and services
+		That way we don't have to build everything from scratch ourselves
+	https://rapidapi.com/hub
+		Allows a central hub for both clients and providers
+	What makes an API valuable?
+		1. Data Collection
+			You have some data that other people find valuable, you can sell this via an API
+		2. Algorithm / Service
+			You have some clever IP that other people might need
+		3. Simplified Interface
+			There is an API that is semi-complicated, and you write one that simplifies it.
+	Internal APIs
+		These are API calls that you might only be able to call internally in the company. Such as inventory management
+	REST API's Representational State API
+		What makes an API RESTful? 
+			It uses HTTP Methods
+			Should have a JSON output
+			Clients and Servers are seperate
+			Statelessness - All requests can be completed fully
+			Resource-Based - All resources can be accesed via a UR-Identifier
+		All the above, is basically just the internet lol
+	Over the course of this section, we will be building out a Jokes API
+		
+30.2 - Creating GET Routes
+	Nice, Angela created a Postman collection that has all the API endpoints to test with as we go
+	PostMan JokeAPI Documentation - https://documenter.getpostman.com/view/6048123/2s9XxsTv8Y
+	First Challenge is to get the 'random' joke endpoint working
+		Should return an ID, jokeText, and jokeType json 
+		I have the base code written out for when the endpoint is hit... but I have no idea how to send it back
+			Mostly looked back on old code that I previously used, the past is awesome :)
+			I used res.send(joke); in the end, but will use the slide deck to see if there is another way
+				There is, when you want to send a json, use res.json(<JS Object>)
+	Challenge 2 - GET specific joke
+		Use the :id parameter to return a joke by id
+			<url>/<endpoint>/:<param>	param will be filled in with the value of the key specified in postman
+		Decided to work through this one on my own as well, used a bit of google to learn how to use express to access params
+			app.<method>(<endpoint>/:<paramName>, (req, res) => { console.log(req.params.<paramName>)} );
+			Basically you set parameters using the :<paramName> after the endpoint. And can refer to them via req.params.<paramName>
+		<Iterable Object>.find((i) => { <conditional> } ) // This will return the first iterable found that matches conditional
+	Challenge 3 - GET all matching joke types
+		Use ?type=<val> to return all jokes that have jokeType match the specified <val>
+		Was very similar to challenge 2. One important thing to note though
+			.../<endpoint>/:<param>  	
+				- Anything that is after the colon is a param. It is accessed in express by req.params.<param>
+			.../<endpoint>?<queryParam>=<qpValue>
+				- Anything after a ? is a query parameter. It is accessed in express by req.query.<queryParam>
+				
+30.3 - Create POST, PUT, and PATCH routes
+	Challenge 4 - POST route
+		Following the Jokes api documentation, this should take in a text body with a jokeText: <string> and jokeType: <string>
+		Then have the code auto create it, presumably then return the newly created joke as a response
+		
+		Didn't take too much effort on the part of the route itself, but I wrote two helper functions to break up the work
+			Played around with a jokes.sort() function, so the final element is always has the highest id number
+			Also a baby helper function to get the final id of the jokes list
+	
+	Challenge 5 - PUT route
+		Remember, PUT requests require a FULL replace, so all the content of the specified id will be replaced
+		
+		Again, I didn't have too much trouble working out the route itself, but had some fun working with the helper functions
+		Today I found out that if you're going to do an arrow function in JS (<args>) => { <code> }
+			The curly brace code MUST have a return as a truthy/falsy, otherwise the function wouldn't be complete.
+			Found this out the hard way when writing the helper for getJokeIndexById(id) function
+				I was trying to be fancy and use the JS function findIndex((el) => { <condition> })
+				But the condition wasn't returning, so it made for a frustrating bug hunt. return <condition> was all
+				Holy shit, Angela used the same function, really cool to see I got to the same solution
+	
+	Challenge 6 - PATCH Route
+		PATCHes only change the specified parameters. Could probably re-use a ton of the PUT code 
+			Yep it was that simple. But Angela's solution is more elegant
+			I used a ternary to decide, but using a || is smarter\
+	
+30.4 - Create DELETE Route
+	This is going to be split up into two seperate sections to see if we can add some basic authentication
+	
+	Challgene 7 - DELETE Route
+		Wasn't too bad either, just a bit of elbow grease getting everything working correct. Found a niche edge case for index [0]
+		But reworked code to get things working again
+		
+	Challenge 8 - DELETE All Route
+		Here we're going to have to ask for an API key to allow someone to delete the entire database.
+		Only allow a user to delete everything if they have the masterkey in the api parameters
+		The API was designed to simply check an API key with a specific query parameter
+		
+30.5 - Blog API Project
+	Note that this just mentions the API, nothing about the frontend
+	Frontend is already half-built by Angela. We'll just have to handle the API HTTP requests
+	Coding Challenge
+		Complete the 5 GET, PUT, POST, PATCH, DELETE methods found in index.js of the starting code
+		server.js runs on port 3000, this will make the API Requests
+		index.js will serve as the backend, run on port 4000, and will serve the API responses
+		
+		Thankfully, I was able to complete all of the challenge without any major issues 
+		It was a bit tricky trying to wrap my head around how a frontend talks with a seperate server, but this code will be 
+		great to reference in the future if I want a neat way of doing how to handle that in the future.
+		
+30.6 - Angela Tip, how to get a job as a programmer
+	2x Angela jumps scare strikes again!
+	Many will require a college degree and whatnot, but many more will more care about what you are able to do
+	This includes building a nice portfolio, helping on stack overflow.
+	Community is important, as well as your hard skills.
+	
+Section 31 - Databases
+
+31.1 Databases Explained, SQL vs NoSql
+	How do we keep our data persistent across sessions, some sort of data storage
+	Main types of Databases
+	SQL - Structured Query Language
+		This is the OG database. Main priniciple is that data is stored in tables
+		Also called a relational database, since tables can relate to each other
+		Examples
+			Oracle Databases
+			PostGre
+			MySQL
+	NoSQL - No SQL, or Not-only SQL
+		Much more flexible, but not nearly as structured
+			For example, for individual users, we can on-the-fly add new fields for specific entries
+		Often use key-value pairs, like JSONs
+		Much more scalable, don't have to have a whole design planned out from the start
+		Examples
+			MongoDB
+			Redis
+			DynamoDB
+	We're learning SQL Postgre bois
+		Apparently NoSQL was the cool hip guy for a while, but had some issues with scaling
+		MongoDB used to be the tech taught here, but got switched to Postgre. We can go find the MongoDB later if you wish
+
+31.2 - Angela Tip - When life gives you lemons
+	dundunnuhnuhnenuh-nih
+	Giving an annecdote about how she wanted to be a science prefect, but didn't get that goal accomplished
+	There are things you can change, and some things that you can't. 
+	Often those you can't are because of other people
+		But you can always change how you act.
+	
+Section 32 - SQL
+32.1 - SQL 
+	Lesson starts off by giving us a link to the w3schools for SQL - https://www.w3schools.com/sql/
+	Most often we will being doing CRUD updates.
+	Most of the Coding will be done within this SQL online sandbox environment
+		Nvm the link doesn't work anymore, instead had to run the following to create the customer table ourselves
+		https://sqliteonline.com/#fiddle-5bbdbaef7288bo2ajn2wly03
+		CREATE TABLE customers (id int,first_name varchar(255),last_name varchar(255),address varchar(255));
+			Four columns, id, first_name, last_name, address
+		For now, we will learn how to make a new table
+			CREATE TABLE <table_name> (<fieldname1> <datatype1>, <fieldname2> ... );
+			We recreated a products table in this same way, including some data types you might not have seen before
+			CREATE TABLE products (
+			id INT NOT NULL, # Will not accept an empty field for this column
+			name STRING, 
+			price MONEY,	# The w3schools sql documentation gives a ton of info on tons of data types
+			PRIMARY KEY (id) # Locks the specified fieldname as an immutable column. 
+			);
+			CREATE Table products (id INT NOT null, name STRING, price MONEY, PRIMARY KEY (id));
+			More on Data types - https://www.w3schools.com/sql/sql_datatypes.asp
+			More on Primary keys - https://www.w3schools.com/sql/sql_primarykey.asp
+		Adding data into the SQL table 
+			INSERT INTO <table name>		# Note the lack of a semicolon, this is all technically one command.
+			VALUES (<first value>, <second>, ...)	# apply the values in-order
+			You can insert only specific columns if needed to, by specifying which ones after the INSERT INTO command
+			INSERT INTO <tablename> (<colx>, <coly>, <colz>)
+			VALUES (<x> , <y>, <z>);
+
+32.2 - READ, SELECT, and WHERE
+	SELECT 		Allows you to read the data from the database
+		Usually these go in a SELECT FROM WHERE search
+		SELECT <column(s)> FROM <table> WHERE <condition>
+
+32.3 - Updating single values and adding columns in SQL
+	UPDATE <table name> 
+	SET <column1> = <value1>, <column2> = <value2> ...
+	WHERE <condition>;
+	We can even do operations on tables, this is called 'Altering' a table
+		ALTER TABLE <table name> 
+		ADD <column name> <datatype>;
+		
+32.4 - Deleting 
+	DELETE FROM <table name> WHERE <condition>;
+		Conditions are important, because it will delete everything otherwise lol
+
+32.5 - Understanding SQL Relationships, Foreign Keys, and Inner Joins
+	Foreign Keys
+		Establish relationships between different tables
+		For example, we're making a table to keep track of orders, which are going to keep track of product movement
+		We can use the id from the products as a foreign key to keep track of them in both tables
+		CREATE TABLE (
+		... # insert fields here,
+		FOREIGN KEY (<fieldname>) REFERENCES <table name>(<foreign table's primary key>));
+		
+	Inner Joining  	- powerful tool used to combine different tables. Inner join will combine by matching keys in both tables
+		Will combine tables by their foreign keys
+		SELECT <table1 name>.<field1>, ..., <table2 name>.<field1>
+		FROM <table1 name>
+		INNER JOIN <table2 name> ON <table1>.<foreign key> = <table2>.<primary key>;
